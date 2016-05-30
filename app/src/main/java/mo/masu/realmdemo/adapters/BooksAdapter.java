@@ -56,16 +56,17 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Book> {
         holder.textTitle.setText(book.getTitle());
         holder.textAuthor.setText(book.getAuthor());
         holder.textDescription.setText(book.getDescription());
+        holder.textSaham.setText(book.getImageUrl());
 
         // load the background image
-        if (book.getImageUrl() != null) {
+/*        if (book.getImageUrl() != null) {
             Glide.with(context)
                     .load(book.getImageUrl().replace("https", "http"))
                     .asBitmap()
                     .fitCenter()
                     .into(holder.imageBackground);
         }
-
+*/
         //remove single match from realm
         holder.card.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -159,6 +160,7 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Book> {
         public TextView textAuthor;
         public TextView textDescription;
         public ImageView imageBackground;
+        public TextView textSaham;
 
         public CardViewHolder(View itemView) {
             // standard view holder pattern with Butterknife view injection
@@ -168,7 +170,8 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Book> {
             textTitle = (TextView) itemView.findViewById(R.id.text_books_title);
             textAuthor = (TextView) itemView.findViewById(R.id.text_books_author);
             textDescription = (TextView) itemView.findViewById(R.id.text_books_description);
-            imageBackground = (ImageView) itemView.findViewById(R.id.image_background);
+            //imageBackground = (ImageView) itemView.findViewById(R.id.image_background);
+            textSaham = (TextView) itemView.findViewById(R.id.text_saham);
         }
     }
 }
