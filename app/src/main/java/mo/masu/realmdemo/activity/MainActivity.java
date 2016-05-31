@@ -14,8 +14,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 //import app.androidhive.info.realm.app.Prefs;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
+import au.com.bytecode.opencsv.CSVReader;
 import mo.masu.realmdemo.R;
 import mo.masu.realmdemo.adapters.BooksAdapter;
 import mo.masu.realmdemo.adapters.RealmBooksAdapter;
@@ -143,6 +147,51 @@ public class MainActivity extends AppCompatActivity {
 
     private void setRealmData() {
 
+        String next[] = {};
+        List<String[]> csvlist = new ArrayList<String[]>();
+        try {
+            InputStreamReader csvStreamReader = new InputStreamReader(
+                    MainActivity.this.getAssets().open(
+                            "data.csv"));
+
+            CSVReader reader = new CSVReader(csvStreamReader);
+            csvlist = reader.readAll();
+
+            reader.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        ArrayList<Book> books = new ArrayList<>();
+        int i =0;
+        for(String[] data : csvlist)
+        {
+            Book book = new Book();
+            book.setId((int) (i+1 + System.currentTimeMillis()));
+            String kbli = "KBLI: "+data[0];
+            book.setAuthor(kbli);
+            book.setTitle(data[1]);
+            String prosen_saham = data[2]+"%";
+            book.setImageUrl(prosen_saham);
+            books.add(book);
+            i++;
+        }
+
+        for (Book b : books) {
+            // Persist your data easily
+            realm.beginTransaction();
+            realm.copyToRealm(b);
+            realm.commitTransaction();
+        }
+
+        //Prefs.with(this).setPreLoad(true);
+
+    }
+
+    /*private void setRealmData() {
+
         ArrayList<Book> books = new ArrayList<>();
 
         Book book = new Book();
@@ -192,8 +241,7 @@ public class MainActivity extends AppCompatActivity {
             realm.copyToRealm(b);
             realm.commitTransaction();
         }
-
         //Prefs.with(this).setPreLoad(true);
 
-    }
+    }*/
 }
