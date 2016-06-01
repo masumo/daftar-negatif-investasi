@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         */
 
         // refresh the realm instance
-        RealmController.with(this).refresh();
+        //RealmController.with(this).refresh();
         // get all persisted objects
         // create the helper adapter and notify data set changes
         // changes will be reflected automatically
@@ -124,7 +124,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRealmAdapter(RealmResults<Book> books) {
 
-        RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books, true);
+        //RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books, true);
+        RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books);
         // Set the data and tell the RecyclerView to draw
         adapter.setRealmAdapter(realmAdapter);
         adapter.notifyDataSetChanged();

@@ -11,9 +11,9 @@ import io.realm.RealmResults;
 
 public class RealmModelAdapter<T extends RealmObject> extends RealmBaseAdapter<T> {
 
-    public RealmModelAdapter(Context context, RealmResults<T> realmResults, boolean automaticUpdate) {
-
-        super(context, realmResults, automaticUpdate);
+    public RealmModelAdapter(Context context, RealmResults<T> realmResults) {
+    //public RealmModelAdapter(Context context, RealmResults<T> realmResults, boolean automaticUpdate) {
+        super(context, realmResults);
     }
 
     @Override
