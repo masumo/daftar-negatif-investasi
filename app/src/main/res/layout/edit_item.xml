@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/title"
+        android:id="@+id/name1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
@@ -13,7 +13,7 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/author"
+        android:id="@+id/kbli"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
@@ -27,5 +27,30 @@
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:hint="Image"
         android:inputType="text" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama:"
+            android:id="@+id/textViewName"
+            android:layout_row="0"
+            android:layout_column="0" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:layout_row="0"
+            android:layout_column="2" />
+
+    </GridLayout>
 
 </LinearLayout>

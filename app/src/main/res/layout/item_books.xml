@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/text_saham"
+                android:id="@+id/text_foreign_stock"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -48,7 +48,7 @@
             android:paddingBottom="@dimen/margin_normal">
 
             <TextView
-                android:id="@+id/text_books_title"
+                android:id="@+id/text_business_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_small"
@@ -61,7 +61,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/text_books_author"
+                android:id="@+id/text_kbli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/margin_large"
@@ -70,7 +70,7 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/text_books_description"
+                android:id="@+id/text_other_reqs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_small"

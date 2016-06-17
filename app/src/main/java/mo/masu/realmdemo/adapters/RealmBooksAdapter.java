@@ -2,13 +2,13 @@ package mo.masu.realmdemo.adapters;
 
 import android.content.Context;
 
-import mo.masu.realmdemo.model.Book;
+import mo.masu.realmdemo.model.Business;
 import io.realm.RealmResults;
 
-public class RealmBooksAdapter extends RealmModelAdapter<Book> {
+public class RealmBooksAdapter extends RealmModelAdapter<Business> {
 
-    public RealmBooksAdapter(Context context, RealmResults<Book> realmResults) {
-        //public RealmBooksAdapter(Context context, RealmResults<Book> realmResults, boolean automaticUpdate) {
+    public RealmBooksAdapter(Context context, RealmResults<Business> realmResults) {
+        //public RealmBooksAdapter(Context context, RealmResults<Business> realmResults, boolean automaticUpdate) {
         super(context, realmResults);
     }
 }

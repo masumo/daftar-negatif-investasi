@@ -1,17 +1,12 @@
 package mo.masu.realmdemo.activity;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
 //import app.androidhive.info.realm.app.Prefs;
 import java.io.IOException;
@@ -23,7 +18,7 @@ import au.com.bytecode.opencsv.CSVReader;
 import mo.masu.realmdemo.R;
 import mo.masu.realmdemo.adapters.BooksAdapter;
 import mo.masu.realmdemo.adapters.RealmBooksAdapter;
-import mo.masu.realmdemo.model.Book;
+import mo.masu.realmdemo.model.Business;
 import mo.masu.realmdemo.realm.RealmController;
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -41,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fab = (FloatingActionButton) findViewById(R.id.fab);
         recycler = (RecyclerView) findViewById(R.id.recycler);
 
         //get realm instance
@@ -67,62 +61,10 @@ public class MainActivity extends AppCompatActivity {
         // changes will be reflected automatically
         setRealmAdapter(RealmController.with(this).getBooks());
 
-        Toast.makeText(this, "Press card item for edit, long press to remove item", Toast.LENGTH_LONG).show();
-
-        //add new item
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                inflater = MainActivity.this.getLayoutInflater();
-                View content = inflater.inflate(R.layout.edit_item, null);
-                final EditText editTitle = (EditText) content.findViewById(R.id.title);
-                final EditText editAuthor = (EditText) content.findViewById(R.id.author);
-                final EditText editThumbnail = (EditText) content.findViewById(R.id.thumbnail);
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setView(content)
-                        .setTitle("Add book")
-                        .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-
-                                Book book = new Book();
-                                //book.setId(RealmController.getInstance().getBooks().size() + 1);
-                                book.setId((int) (RealmController.getInstance().getBooks().size() + System.currentTimeMillis()));
-                                book.setTitle(editTitle.getText().toString());
-                                book.setAuthor(editAuthor.getText().toString());
-                                book.setImageUrl(editThumbnail.getText().toString());
-
-                                if (editTitle.getText() == null || editTitle.getText().toString().equals("") || editTitle.getText().toString().equals(" ")) {
-                                    Toast.makeText(MainActivity.this, "Entry not saved, missing title", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    // Persist your data easily
-                                    realm.beginTransaction();
-                                    realm.copyToRealm(book);
-                                    realm.commitTransaction();
-
-                                    adapter.notifyDataSetChanged();
-
-                                    // scroll the recycler view to bottom
-                                    recycler.scrollToPosition(RealmController.getInstance().getBooks().size() - 1);
-                                }
-                            }
-                        })
-                        .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
+        //Toast.makeText(this, "Press card item for edit, long press to remove item", Toast.LENGTH_LONG).show();
     }
 
-    public void setRealmAdapter(RealmResults<Book> books) {
+    public void setRealmAdapter(RealmResults<Business> books) {
 
         //RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books, true);
         RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books);
@@ -146,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         recycler.setAdapter(adapter);
     }
 
+    // load data from csv file and store it into realm database
     private void setRealmData() {
 
         String next[] = {};
@@ -165,22 +108,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        ArrayList<Book> books = new ArrayList<>();
+        ArrayList<Business> books = new ArrayList<>();
         int i =0;
         for(String[] data : csvlist)
         {
-            Book book = new Book();
+            Business book = new Business();
             book.setId((int) (i+1 + System.currentTimeMillis()));
-            String kbli = "KBLI: "+data[0];
-            book.setAuthor(kbli);
-            book.setTitle(data[1]);
-            String prosen_saham = data[2]+"%";
-            book.setImageUrl(prosen_saham);
+            String kbli = data[0];
+            book.setKbli(kbli);
+            book.setName(data[1]);
+            String prosen_saham = data[2];
+            book.setForeignStock(prosen_saham);
+            book.setOtherReqs(data[3]);
             books.add(book);
             i++;
         }
 
-        for (Book b : books) {
+        for (Business b : books) {
             // Persist your data easily
             realm.beginTransaction();
             realm.copyToRealm(b);
@@ -190,59 +134,4 @@ public class MainActivity extends AppCompatActivity {
         //Prefs.with(this).setPreLoad(true);
 
     }
-
-    /*private void setRealmData() {
-
-        ArrayList<Book> books = new ArrayList<>();
-
-        Book book = new Book();
-        book.setId((int) (1 + System.currentTimeMillis()));
-        book.setAuthor("Reto Meier");
-        book.setTitle("Android 4 Application Development");
-        //book.setImageUrl("http://api.androidhive.info/images/realm/1.png");
-        book.setImageUrl("49%");
-        books.add(book);
-
-        book = new Book();
-        book.setId((int) (2 + System.currentTimeMillis()));
-        book.setAuthor("Itzik Ben-Gan");
-        book.setTitle("Microsoft SQL Server 2012 T-SQL Fundamentals");
-        //book.setImageUrl("http://api.androidhive.info/images/realm/2.png");
-        book.setImageUrl("67%");
-        books.add(book);
-
-        book = new Book();
-        book.setId((int) (3 + System.currentTimeMillis()));
-        book.setAuthor("Magnus Lie Hetland");
-        book.setTitle("Beginning Python: From Novice To Professional Paperback");
-        //book.setImageUrl("http://api.androidhive.info/images/realm/3.png");
-        book.setImageUrl("100%");
-        books.add(book);
-
-        book = new Book();
-        book.setId((int) (4 + System.currentTimeMillis()));
-        book.setAuthor("Chad Fowler");
-        book.setTitle("The Passionate Programmer: Creating a Remarkable Career in Software Development");
-        //book.setImageUrl("http://api.androidhive.info/images/realm/4.png");
-        book.setImageUrl("95%");
-        books.add(book);
-
-        book = new Book();
-        book.setId((int) (5 + System.currentTimeMillis()));
-        book.setAuthor("Yashavant Kanetkar");
-        book.setTitle("Written Test Questions In C Programming");
-        //book.setImageUrl("http://api.androidhive.info/images/realm/5.png");
-        book.setImageUrl("0%");
-        books.add(book);
-
-
-        for (Book b : books) {
-            // Persist your data easily
-            realm.beginTransaction();
-            realm.copyToRealm(b);
-            realm.commitTransaction();
-        }
-        //Prefs.with(this).setPreLoad(true);
-
-    }*/
 }

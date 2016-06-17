@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.support.v4.app.Fragment;
 
-import mo.masu.realmdemo.model.Book;
+import mo.masu.realmdemo.model.Business;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -58,36 +58,36 @@ public class RealmController {
         realm.refresh();
     }*/
 
-    //clear all objects from Book.class
+    //clear all objects from Business.class
     /*public void clearAll() {
 
         realm.beginTransaction();
-        realm.clear(Book.class);
+        realm.clear(Business.class);
         realm.commitTransaction();
     }*/
 
-    //find all objects in the Book.class
-    public RealmResults<Book> getBooks() {
+    //find all objects in the Business.class
+    public RealmResults<Business> getBooks() {
 
-        return realm.where(Book.class).findAll();
+        return realm.where(Business.class).findAll();
     }
 
     //query a single item with the given id
-    public Book getBook(String id) {
+    public Business getBook(String id) {
 
-        return realm.where(Book.class).equalTo("id", id).findFirst();
+        return realm.where(Business.class).equalTo("id", id).findFirst();
     }
 
-    //check if Book.class is empty
+    //check if Business.class is empty
     /*public boolean hasBooks() {
 
-        return !realm.allObjects(Book.class).isEmpty();
+        return !realm.allObjects(Business.class).isEmpty();
     }*/
 
     //query example
-    public RealmResults<Book> queryedBooks() {
+    public RealmResults<Business> queryedBooks() {
 
-        return realm.where(Book.class)
+        return realm.where(Business.class)
                 .contains("author", "Author 0")
                 .or()
                 .contains("title", "Realm")
