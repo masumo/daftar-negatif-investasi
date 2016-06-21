@@ -74,10 +74,12 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
                 inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 View content = inflater.inflate(R.layout.edit_item, null);
                 final TextView editTitle = (TextView) content.findViewById(R.id.name);
-                final EditText editAuthor = (EditText) content.findViewById(R.id.kbli);
-                final EditText editThumbnail = (EditText) content.findViewById(R.id.thumbnail);
+                final TextView editSector = (TextView) content.findViewById(R.id.sector);
+                final TextView editAuthor = (TextView) content.findViewById(R.id.kbli);
+                final TextView editThumbnail = (TextView) content.findViewById(R.id.foreign_stock);
 
                 editTitle.setText(book.getName());
+                editSector.setText(book.getSector());
                 editAuthor.setText(book.getKbli());
                 editThumbnail.setText(book.getForeignStock());
 
