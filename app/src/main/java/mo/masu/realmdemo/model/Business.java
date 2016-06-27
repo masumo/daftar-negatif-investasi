@@ -12,6 +12,8 @@ public class Business extends RealmObject {
 
     private String name;
 
+    private String status;
+
     private String otherReqs;
 
     private String kbli;
@@ -31,6 +33,14 @@ public class Business extends RealmObject {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getName() {

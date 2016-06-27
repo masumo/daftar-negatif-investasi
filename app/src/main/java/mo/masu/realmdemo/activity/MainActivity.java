@@ -116,10 +116,10 @@ public class MainActivity extends AppCompatActivity {
             book.setId((int) (i+1 + System.currentTimeMillis()));
             String kbli = data[0];
             book.setKbli(kbli);
-            book.setName(data[1]);
-            String prosen_saham = data[2];
+            book.setName(data[2]);
+            String prosen_saham = data[3];
             book.setForeignStock(prosen_saham);
-            book.setOtherReqs(data[3]);
+            book.setOtherReqs(data[4]);
             books.add(book);
             i++;
         }
