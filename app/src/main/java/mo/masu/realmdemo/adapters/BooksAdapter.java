@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -132,7 +133,8 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
         public TextView textKBLI;
         public TextView textOtherReqs;
         public ImageView imageBackground;
-        public TextView textForeignStock;
+        //public TextView textForeignStock;
+        public Button textForeignStock;
 
         public CardViewHolder(View itemView) {
             // standard view holder pattern with Butterknife view injection
@@ -143,7 +145,8 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
             textKBLI = (TextView) itemView.findViewById(R.id.text_kbli);
             textOtherReqs = (TextView) itemView.findViewById(R.id.text_other_reqs);
             //imageBackground = (ImageView) itemView.findViewById(R.id.image_background);
-            textForeignStock = (TextView) itemView.findViewById(R.id.text_foreign_stock);
+            //textForeignStock = (TextView) itemView.findViewById(R.id.text_foreign_stock);
+            textForeignStock = (Button) itemView.findViewById(R.id.text_foreign_stock);
         }
     }
 }
