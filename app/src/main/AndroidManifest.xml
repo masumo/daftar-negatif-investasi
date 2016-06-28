@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mo.masu.realmdemo">
+    package="mo.masu.daftarnegatifinvestasi">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".app.MyApplication"
+        android:name="mo.masu.daftarnegatifinvestasi.app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="mo.masu.daftarnegatifinvestasi.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

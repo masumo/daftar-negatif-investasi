@@ -11,20 +11,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/text_foreign_stock"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/circle"
-                android:drawableTop="@android:string/ok"
-                android:paddingTop="20dp"
-                android:text="Contact"
-                android:textColor="#fff" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/text_foreign_stock"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle"
+            android:text="Contact"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" />
 
         <LinearLayout
             android:id="@+id/layout_partner"
