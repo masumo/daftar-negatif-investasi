@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_books"
+    style="@style/AppTheme.Card.Margins"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                            android:id="@+id/text_foreign_stock"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:paddingBottom="@dimen/margin_normal"
+                            android:paddingLeft="@dimen/margin_large"
+                            android:paddingTop="@dimen/margin_large"
+                            android:textSize="30sp"
+                            android:textAlignment="center"
+                            android:textColor="#555555"
+                            android:textStyle="bold" />
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/circle"
+                            android:drawableTop="@android:string/ok"
+                            android:paddingTop="20dp"
+                            android:text="Contact"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/text_asing"
+                            android:text="ASING"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/margin_large"
+                            android:paddingBottom="@dimen/margin_normal"
+                            android:textSize="@dimen/text_size_large"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_partner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_normal">
+
+            <TextView
+                android:id="@+id/text_business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_large"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_kbli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_other_reqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
