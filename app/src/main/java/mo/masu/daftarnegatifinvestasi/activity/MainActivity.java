@@ -1,15 +1,29 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 //import app.androidhive.info.realm.app.Prefs;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -31,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
     private LayoutInflater inflater;
     private FloatingActionButton fab;
     private RecyclerView recycler;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private View content;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +69,61 @@ public class MainActivity extends AppCompatActivity {
         //set toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // set up the navigation drawer
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        content = findViewById(R.id.content);
+        final ActionBar actionBar = getSupportActionBar();
+
+        if (actionBar != null) {
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            private ImageView collapsImg;
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                Snackbar.make(content, menuItem.getTitle() + " pressed", Snackbar.LENGTH_LONG).show();
+                menuItem.setChecked(true);
+                drawerLayout.closeDrawers();
+                switch (menuItem.getItemId()) {
+                    case R.id.drawer_home:
+                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
+                        collapsImg.setImageResource(R.drawable.love);
+                        collapsingToolbarLayout.setTitle("Daftar Bidang Terbuka");
+                        break;
+                    case R.id.drawer_favourite:
+                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
+                        collapsImg.setImageResource(R.drawable.garuda);
+                        collapsingToolbarLayout.setTitle("Daftar Bidang Tertutup");
+                        break;
+                    default:
+                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
+                        collapsImg.setImageResource(R.drawable.love);
+                        collapsingToolbarLayout.setTitle("Daftar Bidang Terbuka");
+                        break;
+                }
+
+                /*if(menuItem.getTitle().toString().toLowerCase().equals("favourite")) {
+                    collapsImg = (ImageView) findViewById(R.id.collapsing_img);
+                    collapsImg.setImageResource(R.drawable.garuda);
+                    collapsingToolbarLayout.setTitle("Daftar Bidang Tertutup");
+                }*/
+
+                return true;
+            }
+        });
+
+        // set up collapsing toolbar
+        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        //collapsingToolbarLayout.setTitle(itemTitle);
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
+        collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.collapsedappbar);
+        collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.expandedappbar);
+
 
         setupRecycler();
 
@@ -63,6 +142,21 @@ public class MainActivity extends AppCompatActivity {
         setRealmAdapter(RealmController.with(this).getBooks());
 
         //Toast.makeText(this, "Press card item for edit, long press to remove item", Toast.LENGTH_LONG).show();
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+    }
+
+
+    // onClick hamburger icon at the ActionBar
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void setRealmAdapter(RealmResults<Business> books) {
@@ -110,11 +204,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         ArrayList<Business> books = new ArrayList<>();
-        int i =0;
-        for(String[] data : csvlist)
-        {
+        int i = 0;
+        for (String[] data : csvlist) {
             Business book = new Business();
-            book.setId((int) (i+1 + System.currentTimeMillis()));
+            book.setId((int) (i + 1 + System.currentTimeMillis()));
             String kbli = data[0];
             book.setKbli(kbli);
             book.setName(data[2]);
@@ -136,4 +229,5 @@ public class MainActivity extends AppCompatActivity {
         //Prefs.with(this).setPreLoad(true);
 
     }
+
 }
