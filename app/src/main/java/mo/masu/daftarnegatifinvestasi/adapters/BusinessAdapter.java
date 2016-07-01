@@ -17,13 +17,13 @@ import mo.masu.daftarnegatifinvestasi.model.Business;
 import mo.masu.daftarnegatifinvestasi.realm.RealmController;
 import io.realm.Realm;
 
-public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
+public class BusinessAdapter extends RealmRecyclerViewAdapter<Business> {
 
     final Context context;
     private Realm realm;
     private LayoutInflater inflater;
 
-    public BooksAdapter(Context context) {
+    public BusinessAdapter(Context context) {
 
         this.context = context;
     }
@@ -43,21 +43,21 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
         realm = RealmController.getInstance().getRealm();
 
         // get the article
-        final Business book = getItem(position);
+        final Business business = getItem(position);
         // cast the generic view holder to our specific one
         final CardViewHolder holder = (CardViewHolder) viewHolder;
 
         // set value of each item on the business list
-        holder.textName.setText(book.getName());
-        holder.textKBLI.setText("KBLI: "+book.getKbli());
-        holder.textOtherReqs.setText(book.getOtherReqs());
-        String foreignStockValue = book.getForeignStock()+"%"+System.getProperty("line.separator")+"ASING";
+        holder.textName.setText(business.getName());
+        holder.textKBLI.setText("KBLI: "+business.getKbli());
+        holder.textOtherReqs.setText(business.getOtherReqs());
+        String foreignStockValue = business.getForeignStock()+"%"+System.getProperty("line.separator")+"ASING";
         holder.textForeignStock.setText(foreignStockValue);
 
         // load the background image
-/*        if (book.getForeignStock() != null) {
+/*        if (business.getForeignStock() != null) {
             Glide.with(context)
-                    .load(book.getForeignStock().replace("https", "http"))
+                    .load(business.getForeignStock().replace("https", "http"))
                     .asBitmap()
                     .fitCenter()
                     .into(holder.imageBackground);
@@ -78,15 +78,15 @@ public class BooksAdapter extends RealmRecyclerViewAdapter<Business> {
                 final TextView detailReqs = (TextView) content.findViewById(R.id.req);
                 final TextView detailStock = (TextView) content.findViewById(R.id.foreign_stock);
 
-                detailName.setText(book.getName());
-                detailSector.setText(book.getSector());
-                detailKBLI.setText(book.getKbli());
-                detailReqs.setText(book.getOtherReqs());
-                detailStock.setText(book.getForeignStock());
+                detailName.setText(business.getName());
+                detailSector.setText(business.getSector());
+                detailKBLI.setText(business.getKbli());
+                detailReqs.setText(business.getOtherReqs());
+                detailStock.setText(business.getForeignStock()+"%");
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setView(content)
-                        .setTitle("Informasi Detail")
+                        .setTitle("Detail Bidang Usaha")
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

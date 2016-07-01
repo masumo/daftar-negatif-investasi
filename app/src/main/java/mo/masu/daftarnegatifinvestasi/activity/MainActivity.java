@@ -1,6 +1,5 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -14,13 +13,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
 //import app.androidhive.info.realm.app.Prefs;
-import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -31,8 +28,8 @@ import java.util.List;
 
 import au.com.bytecode.opencsv.CSVReader;
 import mo.masu.daftarnegatifinvestasi.R;
-import mo.masu.daftarnegatifinvestasi.adapters.BooksAdapter;
-import mo.masu.daftarnegatifinvestasi.adapters.RealmBooksAdapter;
+import mo.masu.daftarnegatifinvestasi.adapters.BusinessAdapter;
+import mo.masu.daftarnegatifinvestasi.adapters.RealmBusinessAdapter;
 import mo.masu.daftarnegatifinvestasi.model.Business;
 import mo.masu.daftarnegatifinvestasi.realm.RealmController;
 import io.realm.Realm;
@@ -40,7 +37,7 @@ import io.realm.RealmResults;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BooksAdapter adapter;
+    private BusinessAdapter adapter;
     private Realm realm;
     private LayoutInflater inflater;
     private FloatingActionButton fab;
@@ -161,8 +158,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRealmAdapter(RealmResults<Business> books) {
 
-        //RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books, true);
-        RealmBooksAdapter realmAdapter = new RealmBooksAdapter(this.getApplicationContext(), books);
+        //RealmBusinessAdapter realmAdapter = new RealmBusinessAdapter(this.getApplicationContext(), books, true);
+        RealmBusinessAdapter realmAdapter = new RealmBusinessAdapter(this.getApplicationContext(), books);
         // Set the data and tell the RecyclerView to draw
         adapter.setRealmAdapter(realmAdapter);
         adapter.notifyDataSetChanged();
@@ -179,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         recycler.setLayoutManager(layoutManager);
 
         // create an empty adapter and add it to the recycler view
-        adapter = new BooksAdapter(this);
+        adapter = new BusinessAdapter(this);
         recycler.setAdapter(adapter);
     }
 
