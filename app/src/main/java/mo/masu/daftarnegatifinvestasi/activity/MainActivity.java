@@ -1,18 +1,23 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,7 +40,7 @@ import mo.masu.daftarnegatifinvestasi.realm.RealmController;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
     private BusinessAdapter adapter;
     private Realm realm;
@@ -45,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private View content;
-    private CollapsingToolbarLayout collapsingToolbarLayout;
+    private Toolbar toolbar;
+    private ArrayList<Business> businesses;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -64,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         this.realm = RealmController.with(this).getRealm();
 
         //set toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         // set up the navigation drawer
@@ -80,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            private ImageView collapsImg;
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 Snackbar.make(content, menuItem.getTitle() + " pressed", Snackbar.LENGTH_LONG).show();
@@ -88,39 +93,18 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawers();
                 switch (menuItem.getItemId()) {
                     case R.id.drawer_home:
-                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
-                        collapsImg.setImageResource(R.drawable.love);
-                        collapsingToolbarLayout.setTitle("Daftar Bidang Terbuka");
+                        toolbar.setTitle("B Usaha Terbuka");
                         break;
                     case R.id.drawer_favourite:
-                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
-                        collapsImg.setImageResource(R.drawable.garuda);
-                        collapsingToolbarLayout.setTitle("Daftar Bidang Tertutup");
+                        toolbar.setTitle("B Usaha Tertutup");
                         break;
                     default:
-                        collapsImg = (ImageView) findViewById(R.id.collapsing_img);
-                        collapsImg.setImageResource(R.drawable.love);
-                        collapsingToolbarLayout.setTitle("Daftar Bidang Terbuka");
+                        toolbar.setTitle("Bidang Usaha");
                         break;
                 }
-
-                /*if(menuItem.getTitle().toString().toLowerCase().equals("favourite")) {
-                    collapsImg = (ImageView) findViewById(R.id.collapsing_img);
-                    collapsImg.setImageResource(R.drawable.garuda);
-                    collapsingToolbarLayout.setTitle("Daftar Bidang Tertutup");
-                }*/
-
                 return true;
             }
         });
-
-        // set up collapsing toolbar
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        //collapsingToolbarLayout.setTitle(itemTitle);
-        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
-        collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.collapsedappbar);
-        collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.expandedappbar);
-
 
         setupRecycler();
 
@@ -200,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        ArrayList<Business> books = new ArrayList<>();
+        businesses = new ArrayList<>();
         int i = 0;
         for (String[] data : csvlist) {
             Business book = new Business();
@@ -212,11 +196,11 @@ public class MainActivity extends AppCompatActivity {
             book.setForeignStock(prosen_saham);
             book.setOtherReqs(data[4]);
             book.setSector(data[5]);
-            books.add(book);
+            businesses.add(book);
             i++;
         }
 
-        for (Business b : books) {
+        for (Business b : businesses) {
             // Persist your data easily
             realm.beginTransaction();
             realm.copyToRealm(b);
@@ -225,6 +209,67 @@ public class MainActivity extends AppCompatActivity {
 
         //Prefs.with(this).setPreLoad(true);
 
+    }
+
+    // related to searching feature
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        // Inflate menu to add items to action bar if it is present.
+        inflater.inflate(R.menu.menu, menu);
+        // Associate searchable configuration with the SearchView
+        //SearchManager searchManager =
+          //      (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        //SearchView searchView =
+          //      (SearchView) menu.findItem(R.id.menu_search).getActionView();
+        //searchView.setSearchableInfo(
+          //      searchManager.getSearchableInfo(getComponentName()));
+
+        final MenuItem item = menu.findItem(R.id.action_search);
+        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
+        searchView.setOnQueryTextListener(this);
+        MenuItemCompat.setOnActionExpandListener(item,
+                new MenuItemCompat.OnActionExpandListener() {
+                    @Override
+                    public boolean onMenuItemActionCollapse(MenuItem item) {
+                        // Do something when collapsed
+                        adapter.setFilter(businesses);
+                        return true; // Return true to collapse action view
+                    }
+
+                    @Override
+                    public boolean onMenuItemActionExpand(MenuItem item) {
+                        // Do something when expanded
+                        return true; // Return true to expand action view
+                    }
+                });
+
+        return true;
+
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        final List<Business> filteredModelList = filter(businesses, newText);
+        adapter.setFilter(filteredModelList);
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+    private List<Business> filter(List<Business> models, String query) {
+        query = query.toLowerCase();
+
+        final List<Business> filteredModelList = new ArrayList<>();
+        for (Business model : models) {
+            final String text = model.getName().toLowerCase();
+            if (text.contains(query)) {
+                filteredModelList.add(model);
+            }
+        }
+        return filteredModelList;
     }
 
 }

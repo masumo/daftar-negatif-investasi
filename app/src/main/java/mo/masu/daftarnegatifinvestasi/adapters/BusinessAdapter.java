@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import mo.masu.daftarnegatifinvestasi.R;
 //import mo.masu.realmdemo.app.Prefs;
 import mo.masu.daftarnegatifinvestasi.model.Business;
@@ -133,4 +136,12 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business> {
 
         }
     }
+
+    // method related to filtering/searching
+    public void setFilter(List<Business> models) {
+        List<Business> mBusinessModel = new ArrayList<>();
+        mBusinessModel.addAll(models);
+        notifyDataSetChanged();
+    }
+
 }
