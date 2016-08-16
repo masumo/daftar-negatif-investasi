@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                         toolbar.setTitle("B Usaha Tertutup");
                         break;
                     default:
-                        toolbar.setTitle("Bidang Usaha");
+                        toolbar.setTitle("UKM");
                         break;
                 }
                 return true;
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         setupRecycler();
 
-        setRealmData();
+        //setRealmData();
 
         /*if (!Prefs.with(this).getPreLoad()) {
             setRealmData();
@@ -189,13 +189,17 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         for (String[] data : csvlist) {
             Business book = new Business();
             book.setId((int) (i + 1 + System.currentTimeMillis()));
-            String kbli = data[0];
-            book.setKbli(kbli);
+            book.setKbli(data[0]);
+            book.setStatus(data[1]);
             book.setName(data[2]);
             String prosen_saham = data[3];
             book.setForeignStock(prosen_saham);
             book.setOtherReqs(data[4]);
             book.setSector(data[5]);
+            int smb = Integer.parseInt(data[6]);
+            int coop = Integer.parseInt(data[7]);
+            book.setForSMB(smb);
+            book.setForPartnership(coop);
             businesses.add(book);
             i++;
         }
@@ -250,26 +254,39 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        final List<Business> filteredModelList = filter(businesses, newText);
-        adapter.setFilter(filteredModelList);
+        filter(newText);
+        //final List<Business> filteredModelList = filter(businesses, newText);
+        //adapter.setFilter(filteredModelList);
         return true;
     }
 
     @Override
-    public boolean onQueryTextSubmit(String query) {
-        return false;
+    public boolean onQueryTextSubmit(String query){
+        filter(query);
+        return true;
     }
-    private List<Business> filter(List<Business> models, String query) {
-        query = query.toLowerCase();
 
-        final List<Business> filteredModelList = new ArrayList<>();
-        for (Business model : models) {
-            final String text = model.getName().toLowerCase();
-            if (text.contains(query)) {
-                filteredModelList.add(model);
-            }
+    // update the recyclerView adapter with the filtered data
+    // to get the filtered data, use the Realm Query function
+    private void filter( String query) {
+        List<Business> dataCopy = RealmController.with(this).getBooks();
+        if(query.isEmpty()){
+            setRealmAdapter(RealmController.with(this).getBooks());
+
+        } else{
+            query = query.toLowerCase();
+
+            /*final List<Business> filteredModelList = new ArrayList<>();
+            for (Business model : dataCopy) {
+                final String text = model.getName().toLowerCase();
+                if (text.contains(query)) {
+                    filteredModelList.add(model);
+                }
+            }*/
+            setRealmAdapter(RealmController.with(this).queryBusiness(query));
         }
-        return filteredModelList;
+
+
     }
 
 }

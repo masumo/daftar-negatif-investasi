@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Daftar Negatif Investasi</string>
+    <string name="search_hint">cari</string>
 </resources>

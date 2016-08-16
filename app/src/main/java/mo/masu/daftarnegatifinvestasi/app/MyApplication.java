@@ -22,7 +22,7 @@ public class MyApplication extends Application {
 
         super.onCreate();
 
-        // load the pre-populated database (realm file)
+        // load the pre-populated database (realm file) located at res/raw/datakbli.realm
 
         copyBundledRealmFile(this.getResources().openRawResource(R.raw.datakbli), Realm.DEFAULT_REALM_NAME);
         RealmConfiguration config = new RealmConfiguration.Builder(this)
