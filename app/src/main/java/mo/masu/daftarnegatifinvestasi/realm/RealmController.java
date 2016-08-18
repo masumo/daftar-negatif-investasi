@@ -67,7 +67,7 @@ public class RealmController {
     }*/
 
     //find all objects in the Business.class
-    public RealmResults<Business> getBooks() {
+    public RealmResults<Business> getBusinesses() {
 
         return realm.where(Business.class).findAll();
     }

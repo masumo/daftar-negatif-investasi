@@ -1,7 +1,5 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -20,10 +18,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 
 //import app.androidhive.info.realm.app.Prefs;
-import com.google.android.gms.appindexing.AppIndex;
+//import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.io.IOException;
@@ -52,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private View content;
     private Toolbar toolbar;
     private ArrayList<Business> businesses;
+    private List<Business> dataCopy; //copy of the whole dataset used for filtering
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -120,12 +118,13 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         // get all persisted objects
         // create the helper adapter and notify data set changes
         // changes will be reflected automatically
-        setRealmAdapter(RealmController.with(this).getBooks());
+        //dataCopy = RealmController.with(this).getBusinesses();
+        setRealmAdapter(RealmController.with(this).getBusinesses());
 
         //Toast.makeText(this, "Press card item for edit, long press to remove item", Toast.LENGTH_LONG).show();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
 
@@ -269,9 +268,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     // update the recyclerView adapter with the filtered data
     // to get the filtered data, use the Realm Query function
     private void filter( String query) {
-        List<Business> dataCopy = RealmController.with(this).getBooks();
+        //List<Business> dataCopy = RealmController.with(this).getBusinesses();
         if(query.isEmpty()){
-            setRealmAdapter(RealmController.with(this).getBooks());
+            setRealmAdapter(RealmController.with(this).getBusinesses());
 
         } else{
             query = query.toLowerCase();
