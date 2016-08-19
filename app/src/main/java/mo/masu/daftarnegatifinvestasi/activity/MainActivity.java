@@ -31,11 +31,9 @@ import java.util.List;
 import au.com.bytecode.opencsv.CSVReader;
 import mo.masu.daftarnegatifinvestasi.R;
 import mo.masu.daftarnegatifinvestasi.adapters.BusinessAdapter;
-import mo.masu.daftarnegatifinvestasi.adapters.RealmBusinessAdapter;
 import mo.masu.daftarnegatifinvestasi.model.Business;
 import mo.masu.daftarnegatifinvestasi.realm.RealmController;
 import io.realm.Realm;
-import io.realm.RealmResults;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
@@ -50,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private Toolbar toolbar;
     private ArrayList<Business> businesses;
     private List<Business> dataCopy; //copy of the whole dataset used for filtering
+    private String businessStatus = "ALL";
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -90,14 +89,30 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 menuItem.setChecked(true);
                 drawerLayout.closeDrawers();
                 switch (menuItem.getItemId()) {
-                    case R.id.drawer_home:
+                    case R.id.drawer_open:
                         toolbar.setTitle("B Usaha Terbuka");
+                        businessStatus = "buka";
+                        changeDataSet(businessStatus);
                         break;
-                    case R.id.drawer_favourite:
+                    case R.id.drawer_closed:
                         toolbar.setTitle("B Usaha Tertutup");
+                        businessStatus = "tutup";
+                        changeDataSet(businessStatus);
+                        break;
+                    case R.id.drawer_smb:
+                        toolbar.setTitle("UKM");
+                        businessStatus = "ukm";
+                        changeDataSet(businessStatus);
+                        break;
+                    case R.id.drawer_default:
+                        toolbar.setTitle("Semua Bidang Usaha");
+                        businessStatus = "all";
+                        changeDataSet(businessStatus);
                         break;
                     default:
-                        toolbar.setTitle("UKM");
+                        toolbar.setTitle("Semua Bidang Usaha");
+                        businessStatus = "all";
+                        changeDataSet(businessStatus);
                         break;
                 }
                 return true;
@@ -113,20 +128,21 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         }
         */
 
-        // refresh the realm instance
-        //RealmController.with(this).refresh();
-        // get all persisted objects
-        // create the helper adapter and notify data set changes
-        // changes will be reflected automatically
-        //dataCopy = RealmController.with(this).getBusinesses();
-        setRealmAdapter(RealmController.with(this).getBusinesses());
-
-        //Toast.makeText(this, "Press card item for edit, long press to remove item", Toast.LENGTH_LONG).show();
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
+    private void changeDataSet(String status){
+        if(status.toLowerCase().equals("all"))
+            adapter.updateData(RealmController.with(this).getAllBusinesses());
+        else
+            adapter.updateData(RealmController.with(this).getAllBusinessesByStatus(status));
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        realm.close();
+    }
 
     // onClick hamburger icon at the ActionBar
     @Override
@@ -137,15 +153,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void setRealmAdapter(RealmResults<Business> books) {
-
-        //RealmBusinessAdapter realmAdapter = new RealmBusinessAdapter(this.getApplicationContext(), books, true);
-        RealmBusinessAdapter realmAdapter = new RealmBusinessAdapter(this.getApplicationContext(), books);
-        // Set the data and tell the RecyclerView to draw
-        adapter.setRealmAdapter(realmAdapter);
-        adapter.notifyDataSetChanged();
     }
 
     private void setupRecycler() {
@@ -159,8 +166,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recycler.setLayoutManager(layoutManager);
 
         // create an empty adapter and add it to the recycler view
-        adapter = new BusinessAdapter(this);
+        adapter = new BusinessAdapter(this,RealmController.with(this).getAllBusinesses());
         recycler.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
     // load data from csv file and store it into realm database
@@ -220,13 +228,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         MenuInflater inflater = getMenuInflater();
         // Inflate menu to add items to action bar if it is present.
         inflater.inflate(R.menu.menu, menu);
-        // Associate searchable configuration with the SearchView
-        //SearchManager searchManager =
-          //      (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        //SearchView searchView =
-          //      (SearchView) menu.findItem(R.id.menu_search).getActionView();
-        //searchView.setSearchableInfo(
-          //      searchManager.getSearchableInfo(getComponentName()));
 
         final MenuItem item = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
@@ -235,14 +236,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 new MenuItemCompat.OnActionExpandListener() {
                     @Override
                     public boolean onMenuItemActionCollapse(MenuItem item) {
-                        // Do something when collapsed
-                        adapter.setFilter(businesses);
                         return true; // Return true to collapse action view
                     }
 
                     @Override
                     public boolean onMenuItemActionExpand(MenuItem item) {
-                        // Do something when expanded
                         return true; // Return true to expand action view
                     }
                 });
@@ -254,8 +252,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onQueryTextChange(String newText) {
         filter(newText);
-        //final List<Business> filteredModelList = filter(businesses, newText);
-        //adapter.setFilter(filteredModelList);
         return true;
     }
 
@@ -268,21 +264,23 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     // update the recyclerView adapter with the filtered data
     // to get the filtered data, use the Realm Query function
     private void filter( String query) {
-        //List<Business> dataCopy = RealmController.with(this).getBusinesses();
+        //List<Business> dataCopy = RealmController.with(this).getAllBusinesses();
         if(query.isEmpty()){
-            setRealmAdapter(RealmController.with(this).getBusinesses());
+            //adapter = new BusinessAdapter(this,RealmController.with(this).getAllBusinesses());
+            if(this.businessStatus!=null && !this.businessStatus.isEmpty() && this.businessStatus.toLowerCase().equals("all"))
+                adapter.updateData(RealmController.with(this).getAllBusinesses());
+            else
+                adapter.updateData(RealmController.with(this).getAllBusinessesByStatus(this.businessStatus));
+            adapter.notifyDataSetChanged();
 
         } else{
             query = query.toLowerCase();
+            if(this.businessStatus!=null && !this.businessStatus.isEmpty() && this.businessStatus.toLowerCase().equals("all"))
+                adapter.updateData(RealmController.with(this).queryBusiness(query));
+            else
+                adapter.updateData(RealmController.with(this).queryBusinessWithStatus(query, this.businessStatus));
+            adapter.notifyDataSetChanged();
 
-            /*final List<Business> filteredModelList = new ArrayList<>();
-            for (Business model : dataCopy) {
-                final String text = model.getName().toLowerCase();
-                if (text.contains(query)) {
-                    filteredModelList.add(model);
-                }
-            }*/
-            setRealmAdapter(RealmController.with(this).queryBusiness(query));
         }
 
 

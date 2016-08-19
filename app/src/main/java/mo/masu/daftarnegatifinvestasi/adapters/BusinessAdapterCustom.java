@@ -12,30 +12,26 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import io.realm.OrderedRealmCollection;
-import io.realm.Realm;
-import io.realm.RealmRecyclerViewAdapter;
 import mo.masu.daftarnegatifinvestasi.R;
+//import mo.masu.realmdemo.app.Prefs;
 import mo.masu.daftarnegatifinvestasi.model.Business;
 import mo.masu.daftarnegatifinvestasi.realm.RealmController;
+import io.realm.Realm;
 
-/**
- * Created by WilayahDua on 18/08/2016.
- */
-public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, BusinessAdapter.CardViewHolder> {
+public class BusinessAdapterCustom extends CustomRealmRecyclerViewAdapter<Business> {
+
     final Context context;
     private Realm realm;
     private LayoutInflater inflater;
-    private OrderedRealmCollection<Business> dataSet;
 
-    public BusinessAdapter(Context context, OrderedRealmCollection<Business> data) {
-        super(context,data,true);
+    public BusinessAdapterCustom(Context context) {
+
         this.context = context;
-        //dataSet.addAll(data);
     }
 
-
+    // create new views (invoked by the layout manager)
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // inflate a new card view
@@ -43,18 +39,16 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, Business
         return new CardViewHolder(view);
     }
 
-
-
     // replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(CardViewHolder holder, int position)  {
+    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, final int position) {
 
         realm = RealmController.getInstance().getRealm();
 
         // get the article
         final Business business = getItem(position);
         // cast the generic view holder to our specific one
-        //final CardViewHolder holder = holder;
+        final CardViewHolder holder = (CardViewHolder) viewHolder;
 
         // set value of each item on the business list
         holder.textName.setText(business.getName());
@@ -108,8 +102,14 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, Business
         });
     }
 
+    // return the size of your data set (invoked by the layout manager)
+    public int getItemCount() {
 
-
+        if (getRealmAdapter() != null) {
+            return getRealmAdapter().getCount();
+        }
+        return 0;
+    }
 
     public static class CardViewHolder extends RecyclerView.ViewHolder {
 
@@ -135,6 +135,13 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, Business
             //  http://www.viralandroid.com/2016/01/circular-button-with-icon-and-text-in-android.html
 
         }
+    }
+
+    // method related to filtering/searching
+    public void setFilter(List<Business> models) {
+        List<Business> mBusinessModel = new ArrayList<>();
+        mBusinessModel.addAll(models);
+        notifyDataSetChanged();
     }
 
 }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.support.v4.app.Fragment;
 
+import io.realm.Case;
 import mo.masu.daftarnegatifinvestasi.model.Business;
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -67,9 +68,17 @@ public class RealmController {
     }*/
 
     //find all objects in the Business.class
-    public RealmResults<Business> getBusinesses() {
+    public RealmResults<Business> getAllBusinesses() {
 
-        return realm.where(Business.class).findAll();
+        return realm.where(Business.class).findAllAsync();
+    }
+
+    //find all objects in the Business.class
+    public RealmResults<Business> getAllBusinessesByStatus(String status) {
+
+        return realm.where(Business.class)
+                .equalTo("status", status)
+                .findAllAsync();
     }
 
     //query a single item with the given id
@@ -88,10 +97,23 @@ public class RealmController {
     public RealmResults<Business> queryBusiness(String query) {
 
         return realm.where(Business.class)
-                .contains("name", query)
+                .contains("name", query, Case.INSENSITIVE)
                 .or()
-                .contains("kbli", query)
-                .findAll();
+                .contains("kbli", query, Case.INSENSITIVE)
+                .findAllAsync();
+
+    }
+
+    public RealmResults<Business> queryBusinessWithStatus(String query, String status) {
+
+        return realm.where(Business.class)
+                .equalTo("status", status)
+                .beginGroup()
+                    .contains("name", query, Case.INSENSITIVE)
+                    .or()
+                    .contains("kbli", query, Case.INSENSITIVE)
+                .endGroup()
+                .findAllAsync();
 
     }
 }

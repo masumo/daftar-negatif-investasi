@@ -21,17 +21,22 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/drawer_home"
+            android:id="@+id/drawer_default"
             android:checked="true"
-            android:title="home"/>
+            android:title="Semua Bidang Usaha"/>
 
         <item
-            android:id="@+id/drawer_favourite"
-            android:title="favourite"/>
+            android:id="@+id/drawer_open"
+            android:checked="true"
+            android:title="Bidang Usaha Terbuka"/>
 
         <item
-            android:id="@+id/drawer_downloaded"
-            android:title="downloaded"/>
+            android:id="@+id/drawer_closed"
+            android:title="Bidang Usaha Tertutup"/>
+
+        <item
+            android:id="@+id/drawer_smb"
+            android:title="Untuk UMKM"/>
 
     </group>
 </menu>
