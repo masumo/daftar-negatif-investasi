@@ -39,7 +39,9 @@
                 android:paddingTop="@dimen/margin_large"
                 android:textSize="@dimen/text_size_large"
                 android:textColor="#555555"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="3"/>
 
             <TextView
                 android:id="@+id/text_kbli"

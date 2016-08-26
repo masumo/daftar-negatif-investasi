@@ -1,13 +1,16 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,6 +21,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 //import app.androidhive.info.realm.app.Prefs;
 //import com.google.android.gms.appindexing.AppIndex;
@@ -35,7 +40,7 @@ import mo.masu.daftarnegatifinvestasi.model.Business;
 import mo.masu.daftarnegatifinvestasi.realm.RealmController;
 import io.realm.Realm;
 
-public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener,FilteringDialog.FilteringDialogListener {
 
     private BusinessAdapter adapter;
     private Realm realm;
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private ArrayList<Business> businesses;
     private List<Business> dataCopy; //copy of the whole dataset used for filtering
     private String businessStatus = "ALL";
+    private FilteringDialog filteringDialog;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -89,17 +95,17 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 menuItem.setChecked(true);
                 drawerLayout.closeDrawers();
                 switch (menuItem.getItemId()) {
-                    case R.id.drawer_open:
+                    case R.id.drawer_open_bs:
                         toolbar.setTitle("B Usaha Terbuka");
                         businessStatus = "buka";
                         changeDataSet(businessStatus);
                         break;
-                    case R.id.drawer_closed:
+                    case R.id.drawer_closed_bs:
                         toolbar.setTitle("B Usaha Tertutup");
                         businessStatus = "tutup";
                         changeDataSet(businessStatus);
                         break;
-                    case R.id.drawer_smb:
+                    case R.id.drawer_smb_bs:
                         toolbar.setTitle("UKM");
                         businessStatus = "ukm";
                         changeDataSet(businessStatus);
@@ -148,11 +154,17 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case android.R.id.home:
+            case R.id.action_filter:
+                //Toast.makeText(this, "menu pressed", Toast.LENGTH_LONG).show();
+                filteringDialog = new FilteringDialog();
+                filteringDialog.show(getSupportFragmentManager(), "NoticeDialogFragment");
+                return true;
+            case android.R.id.home:  // hamburger icon button
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
     private void setupRecycler() {
@@ -229,10 +241,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         // Inflate menu to add items to action bar if it is present.
         inflater.inflate(R.menu.menu, menu);
 
-        final MenuItem item = menu.findItem(R.id.action_search);
-        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
+        final MenuItem searchItem = menu.findItem(R.id.action_search);
+        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setOnQueryTextListener(this);
-        MenuItemCompat.setOnActionExpandListener(item,
+        MenuItemCompat.setOnActionExpandListener(searchItem,
                 new MenuItemCompat.OnActionExpandListener() {
                     @Override
                     public boolean onMenuItemActionCollapse(MenuItem item) {
@@ -286,4 +298,20 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     }
 
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+
+        //TextView txtSector = (TextView) filteringDialog.getView().findViewById(R.id.textOptSector);
+
+        String  sector = filteringDialog.getSectorOption();
+        String asean = filteringDialog.getASEANstatus();
+        //String  stock = (String) ((TextView) findViewById(R.id.textOptStock)).getText();
+        Toast.makeText(this, sector+" "+asean, Toast.LENGTH_LONG).show();
+
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+
+    }
 }

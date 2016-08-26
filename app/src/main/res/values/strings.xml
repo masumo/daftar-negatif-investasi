@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">Daftar Negatif Investasi</string>
     <string name="search_hint">cari</string>
+
+    <string-array name="array_sectorName">
+        <item>Energi dan Sumber Daya Mineral</item>
+        <item>Kehutanan</item>
+        <item>Kelautan dan Perikanan</item>
+        <item>Kesehatan</item>
+        <item>Ketenagakerjaan</item>
+        <item>Keuangan</item>
+        <item>Komunikasi dan Informatika</item>
+        <item>Pariwisata dan Ekonomi Kreatif</item>
+        <item>Pekerjaan Umum</item>
+        <item>Pendidikan</item>
+        <item>Pendidikan dan Kebudayaan</item>
+        <item>Perbankan</item>
+        <item>Perdagangan</item>
+        <item>Perhubungan</item>
+        <item>Perindustrian</item>
+        <item>Pertahanan dan Keamanan</item>
+        <item>Pertanian</item>
+    </string-array>
+
+    <string-array name="array_stockChoice">
+        <item>30</item>
+        <item>100</item>
+    </string-array>
+
 </resources>
+
+
