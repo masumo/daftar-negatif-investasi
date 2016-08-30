@@ -3,6 +3,7 @@
     <string name="search_hint">cari</string>
 
     <string-array name="array_sectorName">
+        <item>--Semua--</item>
         <item>Energi dan Sumber Daya Mineral</item>
         <item>Kehutanan</item>
         <item>Kelautan dan Perikanan</item>
@@ -23,8 +24,19 @@
     </string-array>
 
     <string-array name="array_stockChoice">
+        <item>--Semua--</item>
+        <item>0</item>
+        <item>20</item>
         <item>30</item>
-        <item>100</item>
+        <item>33</item>
+        <item>49</item>
+        <item>51</item>
+        <item>67</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
     </string-array>
 
 </resources>

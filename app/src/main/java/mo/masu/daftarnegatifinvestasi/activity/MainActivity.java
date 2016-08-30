@@ -1,6 +1,8 @@
 package mo.masu.daftarnegatifinvestasi.activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -300,13 +302,14 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public void onDialogPositiveClick(DialogFragment dialog) {
-
-        //TextView txtSector = (TextView) filteringDialog.getView().findViewById(R.id.textOptSector);
-
-        String  sector = filteringDialog.getSectorOption();
-        String asean = filteringDialog.getASEANstatus();
-        //String  stock = (String) ((TextView) findViewById(R.id.textOptStock)).getText();
-        Toast.makeText(this, sector+" "+asean, Toast.LENGTH_LONG).show();
+        // load the selected filters from SharedPreferences file
+        SharedPreferences selectedFilter = getSharedPreferences("FILTERS", Context.MODE_PRIVATE);
+        String sector = selectedFilter.getString("SECTOR", null);
+        String stock = selectedFilter.getString("STOCK", null);
+        int asean = selectedFilter.getInt("ASEAN", 0);
+        adapter.updateData(RealmController.with(this).filterBusinesses(this.businessStatus,sector,stock,asean));
+        adapter.notifyDataSetChanged();
+        Toast.makeText(this, sector+" "+asean+" "+stock, Toast.LENGTH_LONG).show();
 
     }
 

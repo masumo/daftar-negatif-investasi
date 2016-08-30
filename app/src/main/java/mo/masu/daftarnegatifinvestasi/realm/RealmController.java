@@ -5,6 +5,7 @@ import android.app.Application;
 import android.support.v4.app.Fragment;
 
 import io.realm.Case;
+import io.realm.RealmQuery;
 import mo.masu.daftarnegatifinvestasi.model.Business;
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -114,6 +115,19 @@ public class RealmController {
                     .contains("kbli", query, Case.INSENSITIVE)
                 .endGroup()
                 .findAllAsync();
+
+    }
+
+    public RealmResults<Business> filterBusinesses(String status, String sector, String stock, int asean) {
+
+        RealmQuery<Business> filterQuery = realm.where(Business.class);
+        if(!status.toLowerCase().equals("all")) filterQuery.equalTo("status", status);
+        if(!sector.toLowerCase().equals("--semua--")) filterQuery.contains("sector", sector, Case.INSENSITIVE);
+        if(!stock.toLowerCase().equals("--semua--")) filterQuery.contains("foreignStock", stock, Case.INSENSITIVE);
+        if(asean==1) filterQuery.contains("otherReqs", "ASEAN", Case.INSENSITIVE);
+        //else filterQuery.contains("otherReqs", "ASEAN", Case.INSENSITIVE);
+        return filterQuery.findAllAsync();
+        // TODO refactor Stock => change to int
 
     }
 }

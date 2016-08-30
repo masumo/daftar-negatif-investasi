@@ -2,7 +2,9 @@ package mo.masu.daftarnegatifinvestasi.activity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
@@ -29,6 +31,8 @@ public class FilteringDialog extends DialogFragment {
     private Spinner spinSector;
     private Spinner spinStock;
     private CheckBox cbASEAN;
+    private SharedPreferences selectedFilter;
+    private SharedPreferences.Editor editor;
 
     public interface FilteringDialogListener {
         public void onDialogPositiveClick(DialogFragment dialog);
@@ -52,19 +56,6 @@ public class FilteringDialog extends DialogFragment {
                     + " must implement FilteringDialogListener");
         }
     }
-
-    public String getSectorOption (){
-        //TextView txtSector = (TextView) getView().findViewById(R.id.textOptSector);
-        return stockValue;
-    }
-    public String getASEANstatus (){
-        //TextView txtSector = (TextView) getView().findViewById(R.id.textOptSector);
-        String tmp="BUKAN";
-        if(forASEAN) tmp="ASEAN";
-        return tmp;
-    }
-
-
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -91,16 +82,24 @@ public class FilteringDialog extends DialogFragment {
         sectorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinSector.setAdapter(sectorAdapter);
 
+        // SharedPreferences to store selected filters
+        selectedFilter = this.getActivity().getSharedPreferences("FILTERS", Context.MODE_PRIVATE);
+        editor = selectedFilter.edit();
 
         builder.setMessage("Filter Hasil Pencarian")
                 .setPositiveButton("Filter", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // Send the positive button event back to the host activity
-                       // spinSector.getSelectedItem().toString();
+
                         sectorValue= spinSector.getSelectedItem().toString();
                         stockValue= spinStock.getSelectedItem().toString();
                         forASEAN = cbASEAN.isChecked();
-                        //fsgfs
+                        editor.putString("SECTOR", sectorValue);
+                        editor.putString("STOCK", stockValue);
+                        if(forASEAN) editor.putInt("ASEAN",1);
+                        else editor.putInt("ASEAN",0);
+                        editor.commit();
+
+                        // Send the positive button event back to the host activity
                         mListener.onDialogPositiveClick(FilteringDialog.this);
                     }
                 })
