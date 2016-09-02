@@ -50,7 +50,9 @@
                 android:paddingLeft="@dimen/margin_large"
                 android:paddingRight="@dimen/margin_large"
                 android:textSize="@dimen/text_size_normal"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:ellipsize="end"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/text_other_reqs"

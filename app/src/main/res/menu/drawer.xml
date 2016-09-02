@@ -36,7 +36,7 @@
 
         <item
             android:id="@+id/drawer_smb_bs"
-            android:title="Untuk UMKM"/>
+            android:title="Kemitraan atau UMKM"/>
 
     </group>
 </menu>

@@ -79,6 +79,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Status"
+            android:id="@+id/textViewStatus"
+            style="@android:style/TextAppearance.Theme.Dialog" />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Syarat lain"
             android:id="@+id/textViewReq"
             style="@android:style/TextAppearance.Theme.Dialog" />

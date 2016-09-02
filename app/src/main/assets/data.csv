@@ -1,9 +1,722 @@
-15678,"buka","Perdagangan besar",67,"tanpa syarat","Perdagangan",0,0
-39901,"tutup","Usaha Pengolahan Hasil Perikanan (UPI): Industri Pengasapan Ikan dan Biota perairan lainnya",34,"lokasi tertentu dan kawasanindustri yang telah disetujui","Industri",0,0
-32164,"ukm","Konsultasi manajemen",86,"harus presentasi","Perdagangan",0,0
-46215,"buka","hotel bintang tujuh  ",100,"tenaga krja non asing dan","Industri kreatif",0,0
-46215,"ukm","e commerce",100,"server di indonesia dan","Industri kreatif",0,0
-46215,"buka","hotel bintang tujuh  ",100,"tenaga krja non asing dan","Industri kreatif",0,0
-43211,"buka","pemrograman software",100,"server di indo","Industri",0,0
-46215,"buka","hotel bintang tujuh  ",100,"tenaga krja non asing dan","Industri kreatif",0,0
-46215,"tutup","industri pesawat",100,"server di indonesia dan","Industri",0,0
+"01289","tutup","Budidaya Ganja",0,,"Pertanian",0,0
+"10719","tutup","Penangkapan Spesies Ikan yang Tercantum dalam Appendix I Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)",0,,"Kehutanan",0,0
+"52229","tutup","Pengangkatan Benda Berharga Asal Muatan Kapal yang Tenggelam",0,,"Kelautan dan Perikanan",0,0
+"03117","tutup","Pemanfaatan (Pengambilan) Koral/Karang dari Alam Untuk: Bahan Bangunan/Kapur/Kalsium, Akuarium, dan Souvenir/Perhiasan, Serta Koral Hidup atau Koral Mati (recent death coral) dari Alam.",0,,"Kelautan dan Perikanan",0,0
+"20111","tutup","Industri Pembuat Chlor Alkali dengan Proses Merkuri",0,,"Perindustrian",0,0
+"20211","tutup","Industri Bahan Aktif Pestisida: Dichloro Diphenyl Trichloroethane (DDT), Aldrin, Endrin, Dieldrin, Chlordane, Heptachlor, Mirex, dan Toxaphene",0,,"Perindustrian",0,0
+"20119","tutup","Industri Bahan Kimia Industri dan Industri Bahan Perusak Lapisan Ozone (BPO): Polychlorinated Biphenyl (PCB), Hexachlorobenzene; dan Carbon Tetrachloride (CTC), Methyl Chloroform, Methyl Bromide, Trichloro Fluoro Methane  (CFC-11), Dichloro Trifluoro Ethane (CFC-12), Trichloro Trifluoro  Ethane(CFC-113), Dichloro Tetra Fluoro Ethane (CFC-114),  Chloro Pentafluoro Ethane (CFC-115), Chloro Trifluoro Methane (CFC-13), Tetrachloro Difluoro Ethane (CFC-112), Pentachloro Fluoro Ethane (CFC-111), Chloro Heptafluoro Propane (CFC-217), Dichloro Hexafluoro Propane (CFC-216),  Trichloro Pentafluoro Propane (CFC-215), Tetrachloro Tetrafluoro Propane (CFC-214), Pentachloro Trifluoro Propane (CFC-213), Hexachloro Difluoro Propane (CFC-211), Bromo Chloro Difluoro Methane (Halon-1211), Bromo Trifluoro Methane (Halon-1301), Dibromo Tetrafluoro Ethane (Halon-2402), R-500, R-502",0,,"Perindustrian",0,0
+"20119","tutup","Industri Bahan Kimia Daftar-1 Konvensi Senjata Kimia Sebagaimana Tertuang Dalam Lampiran I Undang-Undang Nomor 9 Tahun 2008 Tentang Penggunaan Bahan Kimia sebagai Senjata Kimia",0,,"Perindustrian",0,0
+"11010","tutup","Industri Minuman Keras Mengandung Alkohol",0,,"Perindustrian",0,0
+"11020","tutup","Industri Minuman Mengandung Alkohol: Anggur",0,,"Perindustrian",0,0
+"11031","tutup","Industri Minuman Mengandung Malt",0,,"Perindustrian",0,0
+"52211","tutup","Penyelenggaraan dan Pengoperasian Terminal Penumpang Angkutan Darat",0,,"Perhubungan",0,0
+"52219","tutup","Penyelenggaraan dan Pengoperasian Penimbangan Kendaraan Bermotor",0,,"Perhubungan",0,0
+"52221","tutup","Telekomunikasi/Sarana Bantu Navigasi Pelayaran dan Vessel Traffic Information System (VTIS)",0,,"Perhubungan",0,0
+"52230","tutup","Penyelenggaraan Pelayanan Navigasi Penerbangan",0,,"Perhubungan",0,0
+"71203","tutup","Penyelenggaraan Pengujian Tipe Kendaraan Bermotor",0,,"Perhubungan",0,0
+"61300","tutup","Manajemen dan Penyelenggaraan Stasiun Monitoring Spektrum Frekuensi Radio dan Orbit Satelit",0,,"Komunikasi dan Informatika",0,0
+"91021","tutup","Museum Pemerintah",0,,"Pendidikan dan Kebudayaan",0,0
+"91023","tutup","Peninggalan Sejarah dan Purbakala (candi, keraton, prasasti, petilasan, bangunan kuno, dsb)  ",0,,"Pendidikan dan Kebudayaan",0,0
+"92000","tutup","Perjudian/Kasino",0,,"Pariwisata dan Ekonomi Kreatif",0,0
+"01121
+01122","ukm","Padi",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1111","ukm","Jagung",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1113","ukm","Kedelai",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1114","ukm","Kacang Tanah",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1115","ukm","Kacang Hijau",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1135","ukm","Tanaman pangan lainnya (ubi kayu dan ubi jalar) ",0,"Usaha budidaya tanaman pangan pokok dengan luas kurang dari 25 Ha","Pertanian",1,0
+"01299","ukm","Tanaman Jarak Pagar ",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1137","ukm","Tanaman Pemanis Lainnya",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1140","ukm","Tanaman Tebu",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1150","ukm","Tanaman Tembakau",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1160","ukm","Tanaman Bahan Baku Tekstil dan Tanaman Kapas",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1299","ukm","Tanaman Lainnya yang Tidak diklasifikasikan di Tempat Lain",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"01220","ukm","Tanaman Jambu Mete",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1261","ukm","Tanaman Kelapa",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1262","ukm","Tanaman Kelapa Sawit",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1270","ukm","Tanaman Untuk Bahan Minuman (Teh, Kopi dan Kakao)",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1281","ukm","Tanaman Lada",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1282","ukm","Tanaman Cengkeh",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1284","ukm","Tanaman Minyak Atsiri",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"01285
+01286","ukm","Tanaman Obat/Bahan Farmasi (di luar hortikultura)",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1289","ukm","Tanaman Rempah Lainnya",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1291","ukm","Tanaman Karet dan Penghasil Getah Lainnya",0,"Usaha perbenihan perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1137","ukm","Perkebunan Pemanis Lainnya",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1140","ukm","Perkebunan Tebu",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1150","ukm","Perkebunan Tembakau",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1160","ukm","Perkebunan Bahan Baku Tekstil dan Tanaman Kapas",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"01220","ukm","Perkebunan Jambu Mete",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1261","ukm","Perkebunan Kelapa",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1262","ukm","Perkebunan Kelapa Sawit",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1270","ukm","Perkebunan Untuk Bahan Minuman (Teh, Kopi dan Kakao)",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1281","ukm","Perkebunan Lada",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1282","ukm","Perkebunan Cengkeh",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1284","ukm","Perkebunan Minyak Atsiri",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"01285
+01286","ukm","Perkebunan Obat/Bahan Farmasi (di luar hortikultura)",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1289","ukm","Perkebunan Rempah Lainnya",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1291","ukm","Perkebunan Karet dan Penghasil Getah Lainnya",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1299","ukm","Perkebunan Lainnya",0,"Usaha perkebunan dengan luas kurang dari 25 Ha","Pertanian",1,0
+"1630","ukm","Industri Bunga Cengkeh Kering",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10490","ukm","Industri Minyak Mentah (minyak makan) dari Nabati dan Hewani",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10421","ukm","Industri Kopra, Serat (fiber), Arang Tempurung, Debu (dust), Nata de Coco",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10422","ukm","Industri Minyak Kelapa",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10431","ukm","Industri Minyak Kelapa Sawit",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"1630","ukm","Industri Serat Kapas",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10490","ukm","Industri Biji Kapas",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10399
+","ukm","Industri Pengupasan, Pembersihan, Pengeringan, dan Sortasi Hasil Perkebunan (kakao dan kopi)",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10614
+","ukm","Industri Jambu Mete Menjadi Biji Mete Kering dan Cashew Nut Shell Liquid (CNSL)",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10614
+","ukm","Industri Lada Menjadi Biji Lada Putih Kering dan Biji Lada Hitam Kering",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10721","ukm","Industri Gula Pasir, Pucuk Tebu dan Bagas",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"10763","ukm","Industri Teh Hitam/Teh Hijau",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"12091","ukm","Industri Daun Tembakau Kering (Krosok)",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"22122","ukm","Industri Karet Menjadi Sheet, Lateks Pekat",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"20294","ukm","Industri Minyak Jarak Kasar",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"1450","ukm","Pembibitan dan Budidaya Babi dengan Jumlah Kurang Atau Sama dengan 125 Ekor",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"1463","ukm","Pembibitan dan Budidaya Ayam Buras Serta Persilangannya",0,"Usaha dengan kapasitas tertentu","Pertanian",1,0
+"2119","ukm","Pengusahaan Hutan Tanaman Lainnya (antara lain: Aren, Kemiri, Biji Asam, Bahan Baku Arang, Kayu Manis)",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"2303","ukm","Industri Primer Pengolahan Hasil Hutan: Getah Pinus",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"2308","ukm","Industri Primer Pengolahan Hasil Hutan: Bambu",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"1469","ukm","Pengusahaan Sarang Burung Walet di Alam",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"16101","ukm","Industri Kayu Gergajian (kapasitas produksi sampai dengan 2000M3/tahun)",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"16104","ukm","Industri Primer Pengolahan Rotan",0,"Usaha dengan kapasitas tertentu","Kehutanan",1,0
+"2131","ukm","Pengusahaan Hutan: Rotan",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"2132","ukm","Pengusahaan Hutan: Getah Pinus",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"2134","ukm","Pengusahaan Hutan: Bambu",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"2135","ukm","Pengusahaan Hutan: Damar",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"2136","ukm","Pengusahaan Hutan: Gaharu",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"2139","ukm","Pengusahaan Shellak, Tanaman Pangan Alternatif (sagu), Getah-getahan, dan Perlebahan",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"01492","ukm","Pengusahaan Kokon/Kepompong Ulat Sutra (persutraan alam)",0,"Usaha dengan kapasitas tertentu","Kehutanan",0,1
+"3212","ukm","PembenihanIkan Laut ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"3525","ukm","PembenihanIkan Air Payau ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"3226","ukm","PembenihanIkan Air Tawar  ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"3211","ukm","Pembesaran Ikan Laut ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"3251","ukm","Pembesaran Ikan Air Payau ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"3221","ukm","Pembesaran Ikan Air Tawar  ",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"10211","ukm","Usaha Pengolahan Hasil Perikanan (UPI):Industri Penggaraman/Pengeringan Ikan dan Biota Perairan Lainnya",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"10212","ukm","Usaha Pengolahan Hasil Perikanan (UPI):Industri Pengasapan Ikan dan Biota perairan Lainnya",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"10215
+10779","ukm","Usaha Pengolahan Hasil Perikanan (UPI):Industri Peragian/Fermentasi Ikan dan Produk Masak Lainnya (untuk usaha ekstraksi dan jelly ikan)",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"10216","ukm","Usaha Pengolahan Hasil Perikanan (UPI):Industri berbasis Daging Lumatan dan Surimi",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"46206","ukm","Usaha Pemasaran, Distribusi, Perdagangan Besar, dan Ekspor Hasil Perikanan",0,"Usaha dengan kapasitas tertentu","Kelautan dan Perikanan",0,1
+"10214","ukm","Industri Pemindangan Ikan",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10391","ukm","Industri Tempe Kedelai ",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10392","ukm","Industri Tahu Kedelai",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10792","ukm","Industri Kue Basah",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10793","ukm","Industri Makanan dari Kedelai dan Kacang-Kacangan Selain Kecap, Tempe dan Tahu",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10794","ukm","Industri Krupuk, Keripik, Peyek dan Sejenisnya",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10722","ukm","Industri Gula Merah",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"1630","ukm","Industri Pengupasan dan Pembersihan Umbi-umbian",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"13122","ukm","Industri Pewarnaan Benang dari Serat Alam Maupun Serat Buatan Menjadi Benang Bermotif/Celup, Ikat, dengan Alat yang Digerakkan Tangan",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"13133","ukm","Industri Percetakan Kain ",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"13134","ukm","Industri Batik Tulis",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"13911","ukm","Industri Kain Rajut Khususnya Renda",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"13912","ukm","Industri Bordir/Sulaman",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"16291","ukm","Industri Anyam-anyaman dari Rotan dan Bambu",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"16292","ukm","Industri Anyam-anyaman dari TanamanSelainRotan dan Bambu",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"16293","ukm","Industri Kerajinan Ukir-ukiran dari Kayu Kecuali Mebeler",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"16294","ukm","Industri Alat-alat dapur dari Kayu, Rotan dan Bambu",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"16299","ukm","Industri dari Kayu, Rotan, Gabus yang Tidak Diklasifikasikan Ditempat Lain ",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"32201","ukm","Industri Alat-alat Musik Tradisional",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"14111","ukm","Industri Mukena, Selendang, Kerudung, dan Pakaian Tradisional Lainnya",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"22121","ukm","Industri Pengasapan Karet",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"23932","ukm","Industri Barang dari Tanah Liat Untuk Keperluan Rumah Tangga Khusus Gerabah",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"25931","ukm","Industri Perkakas Tangan Untuk Pertanian yang Diperlukan Untuk Persiapan Lahan Proses Produksi, Pemanenan, Pasca Panen, dan Pengolahan Kecuali Cangkul dan Sekop                      ",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"25932       25933    
+25934","ukm","Industri Perkakas Tangan yang Diproses Secara Manual Atau Semi Mekanik Untuk Pertukangan dan Pemotongan",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"45407","ukm","Industri Jasa Pemeliharaan dan Perbaikan SepedaMotor Kecuali yang Terintegrasi dengan Bidang Usaha Penjualan Sepeda Motor (agen/distributor)",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"95220                  95240        95290","ukm","Industri Reparasi Barang-barang Keperluan Pribadi dan Rumah Tangga",0,"Usaha dengan kapasitas tertentu","Perindustrian",1,0
+"10421","ukm","Industri Kopra",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"10311","ukm","Industri Asinan Buah-Buahan dan Sayur-Sayuran",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"10771","ukm","Industri Kecap",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"10520","ukm","Industri Pengolahan Susu Bubuk dan Susu Kental Manis",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"13134","ukm","Industri Batik Cap",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"16104","ukm","Industri Pengolahan Rotan",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"16103","ukm","Industri Pengawetan Rotan, Bambu dan Sejenisnya",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"16221","ukm","Industri Barang dari Kayu (Industri Moulding dan Komponen Bahan Bangunan)",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"20294","ukm","Industri Minyak Atsiri ",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"12091","ukm","Industri Pengeringan dan PengolahanTembakau",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23921","ukm","Industri Batu Bata dan Tanah Liat/Keramik",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23939","ukm","Industri Barang Lainnya dari Tanah Liat/Keramik",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23942","ukm","Industri Kapur",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23951","ukm","Industri Barang-barang dari Semen",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23952","ukm","Industri Barang-barang dari Kapur",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"23959","ukm","Industri Barang-barang dari Semen dan Kapur Lainnya",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"25952","ukm","Industri Paku, Mur, dan Baut",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"28113","ukm","Industri Komponen dan Suku Cadang Motor Penggerak Mula",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"28130","ukm","Industri Pompa dan Kompresor",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"30912","ukm","Industri Komponen dan Perlengkapan Kendaraan Bermotor Roda Dua, dan Tiga",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"30922","ukm","Industri Perlengkapan Sepeda dan Becak",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"28210","ukm","Industri Alat Mesin Pertanian yang Menggunakan Teknologi Madya Seperti Perontok Padi, Pemipil Jagung, dan Traktor Tangan",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"30111
+30120","ukm","Industri Kapal Kayu Untuk Wisata Bahari dan Untuk Penangkapan Ikan",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"30113","ukm","Industri Peralatan dan Perlengkapan Kapal Kayu Untuk Wisata Bahari dan Untuk Penangkapan Ikan",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"32112","ukm","Industri Barang Perhiasan Berharga untuk Keperluan Pribadi dari Logam Mulia",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"32113","ukm","Industri Barang Perhiasan Berharga Bukan Untuk Keperluan Pribadi dari Logam Mulia",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"32120","ukm","Industri Barang Perhiasan Bukan untuk Keperluan Pribadi dari Bukan Logam Mulia",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"32111","ukm","Industri Permata",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"32903","ukm","Industri Kerajinan yang Tidak Diklasifikasikan di Tempat Lain",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"38302","ukm","Industri Daur Ulang Barang-barang Bukan Logam",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"10721","ukm","Industri Gula Pasir (gula kristal putih, gula kristal rafinasi, dan gula kristal mentah) Berbasis Tebu dengan Kemitraan Dalam Bentuk Inti Plasma 20% dari Luas Lahan",0,"Usaha dengan kapasitas tertentu","Perindustrian",0,1
+"00000 ","ukm","Jasa Konstruksi (Jasa Pelaksana Konstruksi) yang Menggunakan Teknologi Sederhana dan Madya dan/atau Risiko Kecil dan Sedang dan/atau Nilai Pekerjaan Sampai dengan Rp 50.000.000.000,00",0,"Usaha dengan kapasitas tertentu","Pekerjaan Umum",1,0
+"0","ukm","Jasa Bisnis/Jasa Konsultansi Konstruksi yang Menggunakan Teknologi Sederhana/Madya dan/atau Risiko Kecil/Sedang dan/atau Nilai Pekerjaan kurang dari Rp10.000.000.000,00",0,"Usaha dengan kapasitas tertentu","Pekerjaan Umum",1,0
+"47911
+47912
+47913
+47914","ukm","Perdagangan Eceran Melalui Pemesanan Pos dan Internet",0,"Usaha dengan kapasitas tertentu","Perdagangan",0,1
+"79111","ukm","Agen Perjalanan Wisata",0,"Usaha dengan kapasitas tertentu","Pariwisata dan Ekonomi Kreatif",1,0
+"55130","ukm","Pondok Wisata (Homestay)",0,"Usaha dengan kapasitas tertentu","Pariwisata dan Ekonomi Kreatif",1,0
+"90001","ukm","Sanggar Seni",0,"Usaha dengan kapasitas tertentu","Pariwisata dan Ekonomi Kreatif",1,0
+"79921","ukm","Usaha Jasa Pramuwisata",0,"Usaha dengan kapasitas tertentu","Pariwisata dan Ekonomi Kreatif",1,0
+"60102                 60202","ukm","Lembaga Penyiaran Komunitas (LPK) Radio dan Televisi",0,"Usaha dengan kapasitas tertentu","Komunikasi dan Informatika",1,0
+"43212","ukm","Instalasi Kabel ke Rumah dan Gedung",0,"Usaha dengan kapasitas tertentu","Komunikasi dan Informatika",1,0
+"61994","ukm","Warung Internet",0,"Usaha dengan kapasitas tertentu","Komunikasi dan Informatika",1,0
+"01121
+01122","buka","Padi","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1111","buka","Jagung","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1113","buka","Kedelai","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1114","buka","Kacang Tanah","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1115","buka","Kacang Hijau","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1135","buka","Tanaman Pangan Lainnya (ubi kayu dan ubi jalar) ","49","Usaha Perbenihan/Pembibitan Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"01121
+01122","buka"," Padi","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1111","buka","Jagung","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1113","buka","Kedelai","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1114","buka","Kacang Tanah","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1115","buka","Kacang Hijau","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"1135","buka","Tanaman Pangan Lainnya (ubi kayu dan ubi jalar) ","49","Usaha Budidaya Tanaman Pangan Pokok dengan Luas lebih dari 25 Ha","Pertanian",0,0
+"01299","buka","Tanaman Jarak Pagar","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1137","buka","Tanaman Pemanis Lainnya","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1140","buka","Tanaman Tebu","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1150","buka","Tanaman Tembakau","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1160","buka","Tanaman Bahan Baku Tekstil dan Tanaman Kapas","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1252","buka","Tanaman Jambu Mete","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1261","buka","Tanaman Kelapa","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1262","buka","Tanaman Kelapa Sawit","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1270","buka","Tanaman Untuk Bahan Minuman (Teh, Kopi dan Kakao)","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1281","buka","Tanaman Lada","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1282","buka","Tanaman Cengkeh","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1284","buka","Tanaman Minyak Atsiri","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01285
+01286","buka","Tanaman Obat/Bahan Farmasi","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1289","buka","Tanaman Rempah Lainnya","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1291","buka","Tanaman Karet dan Penghasil Getah Lainnya","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1299","buka","Tanaman Lainnya yang Tidak Diklasifikasikan di Tempat Lain","95","Usaha Industri Perbenihan Perkebunan dengan Luas 25 Ha atau Lebih, 
+Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01299","buka","Perkebunan Jarak Pagar","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1137","buka","Perkebunan Pemanis Lainnya","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1140","buka","Perkebunan Tebu","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1150","buka","Perkebunan Tembakau","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1160","buka","Perkebunan Bahan Baku Tekstil dan Tanaman Kapas","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1299","buka","Perkebunan Lainnya yang Tidak diklasifikasikan di Tempat Lain","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1252","buka","Perkebunan Jambu Mete","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1261","buka","Perkebunan Kelapa","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1262","buka","Perkebunan Kelapa Sawit","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1270","buka","Perkebunan Untuk Bahan Minuman (Teh, Kopi dan Kakao)
+","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1281","buka","Perkebunan Lada","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1282","buka","Perkebunan Cengkeh","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1284","buka","Perkebunan Minyak Atsiri","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01285
+01286","buka","Perkebunan Obat/Bahan Farmasi","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1289","buka","Perkebunan Rempah Lainnya","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1291","buka","Perkebunan Karet dan Penghasil Getah Lainnya","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih Sampai Luasan Tertentu Tanpa Unit Pengolahan, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01252
+10399","buka","Perkebunan Jambu Mete dan Industri Biji Mete Kering dan Cashew Nut Shell Liquid (CNSL)","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01281
+10399","buka","Perkebunan Lada dan Industri Biji Lada Putih Kering dan Biji Lada Hitam Kering","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01299
+20294","buka","Perkebunan Jarak dan Industri Minyak Jarak Pagar","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01140
+10721","buka","Perkebunan Tebu, Industri Gula Pasir, Pucuk Tebu, dan Bagas","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01150
+12091","buka","Perkebunan Tembakau dan Industri Daun Tembakau Kering","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"1160","buka","Perkebunan Kapas dan Industri Serat Kapas ","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01261
+10423","buka","Perkebunan Kelapa dan Industri Minyak Kelapa","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01261
+10421
+10773","buka","Perkebunan Kelapa dan Industri Kopra, Serat (fiber), Arang Tempurung, Debu (dust), Nata de Coco","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01262
+10432","buka","Perkebunan Kelapa Sawit dan Industri Minyak Kelapa Sawit (CPO)","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01270
+10399","buka","Perkebunan Kopi dan Industri Pengupasan, Pembersihan dan Sortasi Kopi","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01270
+10399","buka","Perkebunan Kakao dan Industri Pengupasan, Pembersihan dan Pengeringan Kakao","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01270
+10763","buka","Perkebunan Teh dan Industri Teh Hitam/Teh Hijau","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01282
+10772","buka","Perkebunan Cengkeh dan Industri Bunga Cengkeh Kering","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01284
+20294","buka","Perkebunan Tanaman Minyak Atsiri dan Industri Minyak Atsiri","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"01291
+22121
+22122","buka","Perkebunan Karet dan Industri Sheet, Lateks Pekat","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"10399","buka","Perkebunan Biji-bijian selain Kopi dan Kakao dan Industri Pengupasan dan Pembersihan Biji-Bijian Selain Kopi dan Kakao","95","Usaha Perkebunan dengan Luas 25 Ha atau Lebih yang Terintegrasi dengan Unit Pengolahan dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Kewajiban Perkebunan Plasma Sebesar 20%","Pertanian",0,0
+"10411","buka","Industri Minyak Mentah (minyak  makan) dari Nabati dan Hewani","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10421","buka","Industri Kopra, Serat (fiber), Arang Tempurung, Debu (dust), Nata de Coco","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10423","buka","Industri Minyak Kelapa","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10432","buka","Industri Minyak Kelapa Sawit
+
+","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10399","buka","Industri Pengupasan, Pembersihan, Pengeringan dan Sortasi Hasil Perkebunan (kakao dan kopi)","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10721","buka","Industri Gula Pasir, Pucuk Tebu, dan Bagas","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10763","buka","Industri Teh Hitam/Teh Hijau","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"12091","buka","Industri Tembakau Kering (Krosok)","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"20294","buka","Industri Minyak Jarak Kasar","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"01630
+10490","buka","Industri Serat Kapas dan Biji Kapas","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"22121
+22122","buka","Industri Karet Menjadi Sheet, Lateks Pekat","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10614
+","buka","Industri Jambu Mete Menjadi Biji Mete Kering dan Cashew Nut Shell Liquid (CNSL)","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"10614
+","buka","Industri Lada Menjadi Biji Lada Putih Kering dan Biji Lada Hitam Kering","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"1630","buka","Industri Bunga Cengkeh Kering","95","Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Bahan Baku Minimal 20% Berasal dari Kebun Sendiri","Pertanian",0,0
+"1139","buka","Perbenihan Tanaman Buah Semusim",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1210","buka","Perbenihan Anggur",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1220","buka","Perbenihan Buah Tropis",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1230","buka","Perbenihan Jeruk",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1240","buka","Perbenihan Apel dan Buah Batu (Pome and Stone Fruit)",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1251","buka","Perbenihan Buah Beri",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1139","buka","Perbenihan Tanaman Sayuran Semusim",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1253","buka","Perbenihan Tanaman Sayuran Tahunan",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"01285
+01286    ","buka","Perbenihan Tanaman Obat",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1139","buka","Perbenihan Jamur",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"01194
+01302","buka","Perbenihan Tanaman Florikultura
+",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1132","buka","Budidaya Buah Semusim",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1210","buka","Budidaya Anggur",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1220","buka","Budidaya Buah Tropis",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1230","buka","Budidaya Jeruk",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1240","buka","Budidaya Apel dan Buah Batu (Pome and Stone Fruit)",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1251","buka","Budidaya Buah Beri",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1131","buka","Budidaya Sayuran Daun (antara lain: kubis, sawi, bawang daun, seledri)",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1134","buka","Budidaya Sayuran Umbi (antara lain: bawang merah, bawang putih, kentang, wortel)",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1133","buka","Budidaya Sayuran Buah (antara lain: tomat, mentimun)",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1283","buka","Budidaya Cabe, Paprika",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1136","buka","Budidaya Jamur",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1193","buka","Budidaya Tanaman Hias",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1301","buka","Budidaya Tanaman Hias Non Bunga",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"10311
+10320
+10313
+10314
+10330","buka","Industri Pengolahan Hortikultura:Usaha Pasca Panen Buah dan Sayuran",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"72102","buka","Usaha Penelitian Hortikultura dan Usaha Laboratorium Uji Mutu Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"93231","buka","Pengusahaan Wisata Agro Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1630","buka","Usaha Jasa Pascapanen Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"47761","buka","Usaha Perangkaian Bunga/Florist/Dekorator",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"70209","buka","Konsultan Pengembangan Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"43305
+71101
+81300","buka","Landscaping Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"85499","buka","Jasa Kursus Hortikultura",30,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"72102","buka","Penelitian dan Pengembangan Ilmu Teknologi dan RekayasaSumber Daya Genetik Pertanian",49,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"72104","buka","Penelitian dan Pengembangan Ilmu Teknologi dan RekayasaProduk GMO (Rekayasa Genetika)",49,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu","Pertanian",0,0
+"1450","buka","Pembibitan dan Budidaya Babi dengan Jumlah Lebih dari 125 ekor",-1,"Usaha dengan Kapasitas Sama atau Melebihi Kapasitas Tertentu, Lokasi Tertentu yang ditetapkan oleh Kementerian Pertanian","Pertanian",0,0
+"93193
+93229","buka","Pengusahaan Perburuan di Taman Buru dan Blok Buru",49,,"Kehutanan",0,0
+"172","buka","Penangkaran Satwa dan Tumbuhan Serta Lembaga Konservasi",49,,"Kehutanan",0,0
+"93241
+93242
+93243
+93249
+93223
+93222","buka","Pengusahaan Pariwisata Alam berupa Pengusahaan Sarana, Kegiatan dan Jasa Ekowisata di dalam Kawasan Hutan meliputi Wisata Tirta, Wisata Petualangan Alam, dan Wisata Gua. ",51,"Penanaman Modal Asing Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Kehutanan",0,0
+"72102","buka","Pengembangan Teknologi Pemanfaatan Genetik Tumbuhan dan Satwa Liar",-1,"Pernyataan kerjasama dengan lembaga yang terakreditasi/ laboratorium di Indonesia/ lembaga nasional bidang litbang yang ditunjuk oleh Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16101","buka","Industri KayuGergajian dengan Kapasitas Produksi di atas 2000M3/tahun",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16214","buka","Industri Kayu Veneer",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16211","buka","Industri Kayu Lapis",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16212","buka","Industri Kayu Laminated Veneer Lumber (LVL)",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16299","buka","Industri Kayu Industri Serpih Kayu (wood chip)",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"16295","buka","Industri Pelet Kayu (wood pellet)",-1,"Rekomendasi pasokan bahan baku berkelanjutan dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"2120","buka","Usaha Pemanfaatan Hasil Hutan Kayu pada Hutan Alam ",0,"Modal dalam negeri 100%","Kehutanan",0,0
+"46207","buka","Pengadaan dan Peredaran Benih dan Bibit Tanaman Hutan (ekspor dan impor benih dan bibit tanaman hutan)",0,"Modal dalam negeri 100%","Kehutanan",0,0
+"2209","buka","Usaha Pemanfaatan Jasa Lingkungan Air di Kawasan Hutan",0,"Modal dalam negeri 100%","Kehutanan",0,0
+"01711
+01712
+01713
+01714
+01715","buka","Penangkapan dan Peredaran Tumbuhan dan Satwa Liar (TSL) dari Habitat Alam",0,"Modal dalam negeri 100%
+Rekomendasi dari Kementerian Lingkungan Hidup dan Kehutanan","Kehutanan",0,0
+"3111","buka","Perikanan Tangkap dengan Menggunakan Kapal Penangkap Ikan di Wilayah Perairan Indonesia dan Laut Lepas",0,"Modal dalam negeri 100% dan Izin Khusus dari Kementerian Kelautan dan Perikanan mengenai alokasi sumber daya ikan dan titik koordinat daerah penangkapan ikan","Kelautan dan Perikanan",0,0
+"8995","buka","Penggalian Pasir Laut",0,"Modal dalam negeri 100%","Kelautan dan Perikanan",0,0
+"1727","buka","Budidaya Koral/Karang Hias",-1,"Rekomendasi dari Kementerian Lingkungan Hidup dan Kehutanan","Kelautan dan Perikanan",0,0
+"9100","buka","Jasa Konstruksi Migas: Platform",75,,"Energi dan Sumber Daya Mineral",0,0
+"9100","buka","Jasa Konstruksi Migas: Tangki Spherical",49,,"Energi dan Sumber Daya Mineral",0,0
+"9100","buka","Jasa Konstruksi Migas: Instalasi Produksi Hulu Minyak dan Gas Bumi di Darat",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"42219","buka","Jasa Konstruksi Migas: Instalasi Pipa Penyalur di Darat",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"42219","buka","Jasa Konstruksi Migas: Instalasi Pipa Penyalur di Laut",49,,"Energi dan Sumber Daya Mineral",0,0
+"42914","buka","Jasa Konstruksi Migas: Tangki Horisontal/Vertikal, Instalasi Penyimpanan, dan Pemasaran Minyak dan Gas Bumi di Darat",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"71102","buka","Jasa Survei Migas, Geologi,dan Geofisika",49,,"Energi dan Sumber Daya Mineral",0,0
+"71102","buka","Jasa Survei Panas Bumi",95,,"Energi dan Sumber Daya Mineral",0,0
+"9100","buka","Jasa Pemboran Migas di Darat",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"9100","buka","Jasa Pemboran Migas di Laut ",75,,"Energi dan Sumber Daya Mineral",0,0
+"6202","buka","Jasa Pemboran Panas Bumi",95,,"Energi dan Sumber Daya Mineral",0,0
+"9100","buka","Jasa Penunjang Migas: Jasa Operasi Sumur dan Pemeliharaan",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"71102","buka","Jasa Penunjang Migas: Jasa Desain dan Engineering Migas",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"71204","buka","Jasa Penunjang Migas: Jasa Inspeksi Teknis",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"6202","buka","Jasa Pengoperasian dan Pemeliharaan Panas Bumi",90,,"Energi dan Sumber Daya Mineral",0,0
+"35101","buka","Pembangkit Listrik < 1MW",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"35101","buka","Pembangkit Listrik Skala Kecil (1 - 10 MW)",49,,"Energi dan Sumber Daya Mineral",0,0
+"35101","buka","Pembangkit Listrik Tenaga Panas Bumi dengan Kapasitas ? 10 MW",67,,"Energi dan Sumber Daya Mineral",0,0
+"35101","buka","Pembangkit Listrik > 10 MW ",95,"Penanaman Modal Asing Maksimal 100% apabila dalam rangka Kerjasama Pemerintah Swasta/KPS selama masa konsesi","Energi dan Sumber Daya Mineral",0,0
+"35102","buka","Transmisi Tenaga Listrik ",95,"Penanaman Modal Asing Maksimal 100% apabila dalam rangka Kerjasama Pemerintah Swasta/KPS selama masa konsesi","Energi dan Sumber Daya Mineral",0,0
+"35103","buka","Distribusi Tenaga Listrik ",95,"Penanaman Modal Asing Maksimal 100% apabila dalam rangka Kerjasama Pemerintah Swasta/KPS selama masa konsesi","Energi dan Sumber Daya Mineral",0,0
+"71102","buka","Konsultasi di Bidang Instalasi Tenaga Listrik",95,,"Energi dan Sumber Daya Mineral",0,0
+"42213","buka","Pembangunan dan Pemasangan Instalasi Tenaga Listrik atas Instalasi Penyediaan Tenaga Listrik",95,,"Energi dan Sumber Daya Mineral",0,0
+"43211","buka","Pembangunan dan Pemasangan Instalasi Tenaga Listrik atasInstalasi Pemanfaatan Tenaga Listrik Tegangan Tinggi/Ekstra Tinggi",49,,"Energi dan Sumber Daya Mineral",0,0
+"43211","buka","Pembangunan dan Pemasangan Instalasi Tenaga Listrik atasInstalasi Pemanfaatan Tenaga Listrik Tegangan Rendah/Menengah",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"43211","buka","Pengoperasian dan Pemeliharaan Instalasi Tenaga Listrik",95,,"Energi dan Sumber Daya Mineral",0,0
+"71204","buka","Pemeriksaan dan Pengujian Instalasi Tenaga Listrik atas Instalasi Penyediaan Tenaga Listrik atau Pemanfaatan Tenaga Listrik Tegangan Tinggi/Ekstra Tinggi",49,,"Energi dan Sumber Daya Mineral",0,0
+"71204","buka","Pemeriksaan dan Pengujian Instalasi Tenaga Listrik atas Instalasi Pemanfaatan Tenaga Listrik Tegangan Rendah /Menengah",0,"Modal dalam negeri 100%","Energi dan Sumber Daya Mineral",0,0
+"45201","buka","Pemeliharaan dan Reparasi Mobil",49,,"Energi dan Sumber Daya Mineral",0,0
+"12011","buka","Industri Rokok Kretek                                                                                  ",-1,"Rekomendasi dari Kementerian Perindustrian:
+Untuk perluasan usaha, hanya industri rokok yang telah memiliki Izin Usaha Industri (IUI) pada bidang usaha sejenis; atau
+Untuk penanaman modal baru, hanya industri rokok skala kecil dan menengah yang bermitra dengan industri rokok skala besar yang sudah memiliki IUI pada bidang usaha sejenis","Perindustrian",0,0
+"12012","buka","Industri Rokok Putih                                                                                                                                                                      ",-1,"Rekomendasi dari Kementerian Perindustrian:
+Untuk perluasan usaha, hanya industri rokok yang telah memiliki Izin Usaha Industri (IUI) pada bidang usaha sejenis; atau
+Untuk penanaman modal baru, hanya industri rokok skala kecil dan menengah yang bermitra dengan industri rokok skala besar yang sudah memiliki IUI pada bidang usaha sejenis","Perindustrian",0,0
+"12019","buka","Industri Rokok Lainnya",-1,"Rekomendasi dari Kementerian Perindustrian:
+Untuk perluasan usaha, hanya industri rokok yang telah memiliki Izin Usaha Industri (IUI) pada bidang usaha sejenis; atau
+Untuk penanaman modal baru, hanya industri rokok skala kecil dan menengah yang bermitra dengan industri rokok skala besar yang sudah memiliki IUI pada bidang usaha sejenis","Perindustrian",0,0
+"17011","buka","Industri Bubur Kertas Pulp (dari kayu) ",-1,"Bahan baku dari Hutan Tanaman Industri (HTI) atau berasal dari Chip Impor jika bahan baku dalam negeri tidak mencukupi","Perindustrian",0,0
+"17013","buka","Industri Kertas Berharga (antara lain: bank notes paper, cheque paper, watermark paper)",-1,"Izin operasional dari BOTASUPAL/BIN; dan
+Rekomendasi dari Kementerian Perindustrian","Perindustrian",0,0
+"18112","buka","Industri Percetakan Uang dan Industri Percetakan Khusus/Dokumen Sekuriti (antara lain: perangko, materai, surat berharga, paspor, dokumen kependudukan dan hologram)",-1,"Izin operasional dari BOTASUPAL/BIN; dan
+Rekomendasi dari Kementerian Perindustrian","Perindustrian",0,0
+"20119","buka","Industri Siklamat dan Sakarin",-1,"Sesuai dengan ketentuan yang ditetapkan BPOM dan Kementerian Perdagangan","Perindustrian",0,0
+"20293","buka","Industri Tinta Khusus",-1,"Izin operasional dari BOTASUPAL/BIN; dan
+Rekomendasi dari Kementerian Perindustrian","Perindustrian",0,0
+"24202","buka","Industri Peleburan Timah Hitam",-1,"Rekomendasi dari Kementerian Lingkungan Hidup dan Kementerian Perindustrian khusus untuk industri yang menggunakan bahan baku accu bekas","Perindustrian",0,0
+"22123","buka","Industri Crumb Rubber",-1,"Izin khusus dari Menteri Perindustrian dengan ketentuan terpadu dengan pengembangan perkebunan karet:
+pemenuhan kebutuhan bahan baku paling kurang 20% dari kapasitas produksi berasal dari kebun karet sendiri; dan
+Pemenuhan kebutuhan bahan baku paling banyak 80% dengan pola kemitraan
+dengan paling sedikit dari luas kebun 20% merupakan kebun plasma","Perindustrian",0,0
+"20114","buka","Industri Bahan Baku Untuk Bahan Peledak",49,"a. 	Penanaman Modal Asing Maksimal 49%, dengan 51% untuk BUMN
+b.	Rekomendasi dari Kementerian Pertahanan","Pertahanan dan Keamanan",0,0
+"20292","buka","Industri Komponen Utama dan/atau Penunjang
+",49,"a. 	Penanaman Modal Asing Maksimal 49%, dengan 51% untuk BUMN
+b.	Rekomendasi dari Kementerian Pertahanan","Pertahanan dan Keamanan",0,0
+"20292","buka","Industri Komponen dan/atau Pendukung (Perbekalan)",49,"a. 	Penanaman Modal Asing Maksimal 49%, dengan 51% untuk BUMN
+b.	Rekomendasi dari Kementerian Pertahanan","Pertahanan dan Keamanan",0,0
+"25200
+25934
+30300
+30400","buka","Industri Alat Utama",0,"a.	Modal dalam negeri 100%
+b.	Rekomendasi dari Kementerian Pertahanan","Pertahanan dan Keamanan",0,0
+" 74909","buka","Jasa Konsultasi Keamanan",49,"a.	Penanaman Modal Asing Maksimal 49%
+b.	Izin Operasional dari Mabes Polri","Pertahanan dan Keamanan",0,0
+"80100","buka","Jasa Penyediaan Tenaga Keamanan, Kawal Angkut Uang dan Barang Berharga, Penyediaan Jasa Keamanan Menggunakan Hewan/Satwa",49,"a.	Penanaman Modal Asing Maksimal 49%
+b.	Izin Operasional dari Mabes Polri","Pertahanan dan Keamanan",0,0
+"80200","buka","Jasa Penerapan Peralatan Keamanan",49,"a.	Penanaman Modal Asing Maksimal 49%
+b.	Izin Operasional dari Mabes Polri","Pertahanan dan Keamanan",0,0
+"85499","buka","Jasa Pendidikan dan Latihan Keamanan",49,"a.	Penanaman Modal Asing Maksimal 49%
+b.	Izin Operasional dari Mabes Polri","Pertahanan dan Keamanan",0,0
+"00000 ","buka","Jasa Kontruksi (Jasa Pelaksana Konstruksi) yang Menggunakan Teknologi Tinggi dan/atau Risiko Tinggi dan/atau Nilai Pekerjaan Lebih dari Rp 50.000.000.000,00 
+(CPC 511, 512, 513, 514, 515, 516, 517, dan 518)",67,"Penanaman Modal Asing Maksimal 67%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN ","Pekerjaan Umum",0,0
+"00000 ","buka","Jasa Bisnis/Jasa Konsultansi Konstruksi yang Menggunakan Teknologi Tinggi dan/atau Risiko Tinggi dan/atau Nilai Pekerjaan Lebih dari Rp 10.000.000.000,00
+(CPC 8671, 8672, 8673, 8674, dan 9403) ",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN ","Pekerjaan Umum",0,0
+"36001
+","buka","Pengusahaan Air Minum
+",95,"Penanaman Modal Asing Maksimal 95%","Pekerjaan Umum",0,0
+"45103
+45104
+45403
+45404    ","buka","Perdagangan Eceran Mobil, Sepeda Motor, dan Kendaraan Niaga",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"45302
+45406             ","buka","Perdagangan Eceran Suku Cadang dan Aksesoris Mobil, Sepeda Motor, dan Kendaraan Niaga",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47111","buka","Supermarket dengan Luas Lantai Penjualan Kurang dari 1.200 m2",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47111","buka","Minimarket dengan Luas Lantai Penjualan Kurang dari 400 m2 Termasuk Convenience Store dan Community Store",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47191","buka","Departement Store dengan Luas Lantai Penjualan 400 m2 - 2.000 m2",67,"Penanaman Modal Asing Maksimal 67%;dan
+Izin Khusus dari Kementerian Perdagangan dengan persyaratan:
+Bertempat di dalam mal dan tidak stand alone;
+Penambahan outlet store berdasarkan ekspor performance (pay performance)","Perdagangan",0,0
+"47735","buka","Perdagangan Eceran Barang Perhiasan",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47746","buka","Perdagangan Eceran Barang Antik",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47795","buka","Perdagangan Eceran Alat Transportasi Air dan Perlengkapannya",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47112","buka","Perdagangan Eceran Bukan di Supermarket atau Minimarket ",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47192","buka","Perdagangan Eceran Bukan di Toserba/Departement Store",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47511
+47512                       ","buka","Perdagangan Eceran Tekstil",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47640","buka","Perdagangan Eceran Khusus Alat Permainan dan Mainan Anak di Toko",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47725","buka","Perdagangan Eceran Kosmetik",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47712","buka","Perdagangan Eceran Alas Kaki",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47861","buka","Perdagangan Eceran Elektronik",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"4722 4724","buka","Perdagangan Eceran Makanan dan Minuman",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"47919","buka","Perdagangan Eceran Melalui Sistem Elektronik Untuk Berbagai Barang Lainnya (Misalnya: Minuman Beralkohol)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"46100","buka","Jasa Keagenan (Commision Agent)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"68200","buka","Broker Properti/Real Estate",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Perdagangan Distributor yang Tidak Terafiliasi dengan Produksi",67,,"Perdagangan",0,0
+"52101","buka","Pergudangan",67,,"Perdagangan",0,0
+"00000 ","buka","Jasa Survei Keadaan Barang Muatan (Cargo Condition Survey)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Sarana Angkutan Darat, Laut, dan Udara Beserta Kelengkapannya",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Sarana Keteknikan dan Industri Termasuk Rekayasa teknik (Technical and Industry Survey)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Lingkungan Hidup (Ecological Survey)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Terhadap Obyek-Obyek Pembiayaan atau Pengawasan Persediaan Barang dan Pergudangan (Warehousing Supervision)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei dengan atau Tanpa Merusak Obyek (Destructive/Nondestructive Testing)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Kuantitas (Quantity Survey)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Kualitas (Quality Survey)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Jasa Survei Pengawasan (Supervision Survey) atas Suatu Proses Kegiatan Sesuai Standar yang Berlaku atau yang Disepakati ",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"73200","buka","Jasa Survei/Jajak Pendapat Masyarakat dan Penelitian Pasar ",0,"Modal dalam negeri 100%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Perdagangan",0,0
+"77100","buka","Persewaan Alat Transportasi Darat (Rental Without Operator)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"77305","buka","Persewaan Mesin Pertanian danPeralatannya",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"77306","buka","Persewaan Mesin Konstruksi dan Teknik Sipil dan Peralatannya",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"77307","buka","Persewaan Mesin Kantor dan Peralatannya (termasuk komputer)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"77309","buka","Persewaan Mesin Lainnya dan Peralatannya yang Tidak Diklasifikasikan di Tempat Lain (pembangkit tenaga listrik, tekstil, pengolahan/pengerjaan logam/kayu, percetakan, dan las listrik)",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"81210","buka","Jasa Kebersihan Gedung",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"96200","buka","Jasa Binatu",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"96111","buka","Pangkas Rambut",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"96112","buka","Salon Kecantikan",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"96991","buka","Penjahitan",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"82190","buka","Jasa Foto Kopi, Penyiapan Dokumen, dan Jasa Khusus Penunjang Kantor Lainnya",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"46333","buka","Perdagangan Besar Minuman Keras/Beralkohol (importir, distributor, dan subdistributor)",-1,"Memiliki:
+Surat Izin Usaha Perdagangan Minuman Beralkohol (SIUP–MB)
+Jaringan distribusi dan tempatnya khusus","Perdagangan",0,0
+"47221","buka","Perdagangan Eceran Minuman Keras/Beralkohol",-1,"Memiliki:
+Surat Izin Usaha Perdagangan Minuman Beralkohol (SIUP–MB)
+Jaringan distribusi dan tempatnya khusus","Perdagangan",0,0
+"47826","buka","Perdagangan Eceran Kaki Lima Minuman Keras/Beralkohol",-1,"Memiliki:
+Surat Izin Usaha Perdagangan Minuman Beralkohol (SIUP–MB)
+Jaringan distribusi dan tempatnya khusus","Perdagangan",0,0
+"00000 ","buka","Penyelenggaraan Sistem Perdagangan Alternatif",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"00000 ","buka","Peserta Sistem Perdagangan Alternatif",0,"Modal dalam negeri 100%","Perdagangan",0,0
+"91022","buka","Pengelolaan Museum
+(CPC 96321)",67,"Penanaman Modal Asing Maksimal 67%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"91024","buka","Pengelolaan Peninggalan Sejarah dan Purbakala Berupa Candi, Keraton, Prasasti, Petilasan, dan Bangunan Kuno",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"79120","buka","Biro Perjalanan Wisata
+(CPC 7471)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"56210","buka","Jasa Boga/Catering",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"55114","buka","Hotel Bintang Dua    ",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"55115","buka","Hotel Bintang Satu",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"55120","buka","Hotel Non Bintang",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"55199","buka","Motel",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"93111","buka","Rumah Biliar
+(CPC 964)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"93113","buka","Gelanggang Bowling 
+(CPC 964)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"93112","buka","Lapangan Golf 
+(CPC 96413)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"90006","buka","Galeri Seni",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"90006","buka","Gedung Pertunjukan Seni",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"90004","buka","Jasa Impresariat
+(CPC 96191)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"93292","buka","Karaoke",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"93293","buka","Ketangkasan",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"82301
+","buka","Penyelenggaraan Pertemuan, Perjalanan Insentif, Konferensi, dan Pameran (MICE) (CPC 87909)",67,"Penanaman Modal Asing Maksimal 67% 
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"96122","buka","SPA (Sante Par Aqua)",51,,"Pariwisata dan Ekonomi Kreatif",0,0
+"91034","buka","Pengusahaan Obyek Wisata Alam di Luar Kawasan Konservasi",67,,"Pariwisata dan Ekonomi Kreatif",0,0
+"73100","buka","Pembuatan Sarana Promosi Film, Iklan, Poster, Still, Photo, Slide, Klise, Banner, Pamflet, Baliho, Folder, dll (CPC 871)",-1,"Penanaman Modal Dalam Negeri 100%
+Maksimal 51% bagi penanam modal dari negara-negara ASEAN","Pariwisata dan Ekonomi Kreatif",0,0
+"49431","buka","Angkutan Barang Umum dengan Moda Darat",49,,"Perhubungan",0,0
+"49432","buka","Angkutan Barang Khusus dengan Moda Darat",49,,"Perhubungan",0,0
+"49211
+49414
+49213
+49214
+49215","buka","Angkutan Orang dengan Moda Darat Dalam Trayek (Angkutan Antarkota Antar Provinsi, Angkutan Pedesaan, Angkutan Antarkota Dalam
+Provinsi, Angkutan Perkotaan/Perdesaan, dan Angkutan Lintas Batas Negara)",49,,"Perhubungan",0,0
+"49421
+49221
+","buka","Angkutan Orang dengan Moda Darat Tidak Dalam Trayek (Taksi, Angkutan Pariwisata, Angkutan Tujuan Tertentu, Angkutan Kawasan Tertentu)",49,,"Perhubungan",0,0
+"5011
+5013  ","buka","Angkutan Moda Laut Dalam Negeri
+",49,,"Perhubungan",0,0
+"5012
+5014","buka","Angkutan Moda Laut Luar Negeri",49,,"Perhubungan",0,0
+"50121
+50122
+50123","buka","Angkutan Moda Laut Luar Negeri untuk Penumpang (tidak termasuk cabotage) (CPC 7211)
+",-1,"Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Perhubungan",0,0
+"50141
+50142
+50143","buka","Angkutan Moda Laut Luar Negeri untuk Barang (tidak termasuk cabotage)  (CPC 7212)",-1,"Maksimal 70% bagi penanam modal dari negara-negara ASEAN","Perhubungan",0,0
+"50214","buka","Angkutan Penyeberangan Umum Antar Provinsi",49,,"Perhubungan",0,0
+"50215","buka","Angkutan Penyeberangan Perintis Antar Provinsi",49,,"Perhubungan",0,0
+"50216","buka","Angkutan Penyeberangan Umum Antar Kabupaten/Kota",49,,"Perhubungan",0,0
+"50217","buka","Angkutan Penyeberangan Perintis Antar Kabupaten/Kota",49,,"Perhubungan",0,0
+"50218","buka","Angkutan Penyeberangan Umum Dalam Kabupaten/Kota",49,,"Perhubungan",0,0
+"50211","buka","Angkutan Sungai dan Danau Untuk Penumpang dengan Trayek Tetap dan Teratur ",49,,"Perhubungan",0,0
+"50212","buka","Angkutan Sungai dan Danau Untuk Penumpang dengan Trayek Tidak Tetap dan Tidak Teratur ",49,,"Perhubungan",0,0
+"50213","buka","Angkutan Sungai dan Danau dengan Trayek Tidak Tetap dan Tidak Teratur Untuk Wisata ",49,,"Perhubungan",0,0
+"50221","buka","Angkutan Sungai dan Danau Untuk Barang Umum dan/atau Hewan ",49,,"Perhubungan",0,0
+"50222","buka","Angkutan Sungai dan Danau Untuk Barang Khusus",49,,"Perhubungan",0,0
+"50223","buka","Angkutan Sungai dan Danau Untuk Barang Berbahaya",49,,"Perhubungan",0,0
+"52221
+52222
+52223","buka","Penyediaan Fasilitas Pelabuhan (dermaga, gedung, penundaan kapal terminal peti kemas, terminal curah cair, terminal curah kering dan terminal Ro-Ro)",49,"Penanaman Modal Asing Maksimal 49%
+Izin Khusus dari Kementerian Perhubungan terkait dengan persyaratan modal minimum","Perhubungan",0,0
+"52109","buka","Penyediaan Fasilitas Pelabuhan Berupa Penampungan Limbah (reception facilities)",49,,"Perhubungan",0,0
+"52229","buka","Jasa Salvage dan/atau Pekerjaan Bawah Air (PBA)",-1,"Izin Khusus dari Kementerian Perhubungan","Perhubungan",0,0
+"52211","buka","Usaha Penunjang pada Terminal",67,,"Perhubungan",0,0
+"52230","buka","Jasa Kebandarudaraan",49,,"Perhubungan",0,0
+"51102         
+51202
+52240
+77304","buka","Jasa Penunjang Angkutan Udara (sistem reservasi melalui komputer, pelayanan di darat untuk penumpang dan kargo/ground handling, dan penyewaan pesawat udara/aircraft leasing)",67,,"Perhubungan",0,0
+"52230","buka","Pelayanan Jasa Terkait Bandar Udara",67,,"Perhubungan",0,0
+"52240","buka","Jasa Bongkar Muat Barang 
+(maritime cargo handling services dengan CPC 7412)",67,"Penanaman Modal Asing Maksimal 67%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN 
+Hanya berlaku pada 4 (empat) pelabuhan di wilayah Indonesia bagian timur yaitu: Pelabuhan Bitung, Pelabuhan Ambon, Pelabuhan Kupang, dan Pelabuhan Sorong khusus Negara-negara anggota ASEAN","Perhubungan",0,0
+"52291","buka","Jasa Pengurusan Transportasi",67,,"Perhubungan",0,0
+"52294","buka","Jasa Ekspedisi Muatan Pesawat Udara",67,,"Perhubungan",0,0
+"79112","buka","Agen Penjualan Umum (GSA) Perusahan Angkutan Udara Asing",67,,"Perhubungan",0,0
+"52223","buka","Penyediaan dan Pengusahaan Pelabuhan Penyeberangan",49,,"Perhubungan",0,0
+"52222","buka","Penyediaan dan Pengusahaan Pelabuhan Sungai dan Danau",49,,"Perhubungan",0,0
+"50135","buka","Pelayaran Rakyat",0,"Modal dalam negeri 100%","Perhubungan",0,0
+"51101
+51102","buka","Angkutan Moda Udara Niaga Berjadwal Dalam Negeri
+",49,"Penanaman Modal Asing Maksimal 49%
+Pemilik modal nasional harus tetap lebih besar dari keseluruhan pemilik modal asing (single majority)","Perhubungan",0,0
+"51101
+51102
+51103","buka","Angkutan Moda Udara Niaga Berjadwal Luar Negeri",49,"Penanaman Modal Asing Maksimal 49%
+Pemilik modal nasional harus tetap lebih besar dari keseluruhan pemilik modal asing (single majority)","Perhubungan",0,0
+"51104
+51105","buka","Angkutan Udara Niaga Tidak Berjadwal",49,"Penanaman Modal Asing Maksimal 49%
+Pemilik modal nasional harus tetap lebih besar dari keseluruhan pemilik modal asing (single majority)","Perhubungan",0,0
+"51109","buka","Angkutan Udara Bukan Niaga
+",49,"Penanaman Modal Asing Maksimal 49%
+Pemilik modal nasional harus tetap lebih besar dari keseluruhan pemilik modal asing (single majority)","Perhubungan",0,0
+"71203","buka","Penyelenggaraan Pengujian Berkala Kendaraan Bermotor",49,,"Perhubungan",0,0
+"52211","buka","Pembangunan Terminal Penumpang Angkutan Darat (terbatas hanya fasilitas umum dan terminal barang untuk umum)",49,,"Perhubungan",0,0
+"52295","buka","Angkutan Multimoda",49,,"Perhubungan",0,0
+"61100","buka","Penyelenggaraan Jaringan Telekomunikasi Tetap ",67,,"Komunikasi dan Informatika",0,0
+"61200
+61300","buka","Penyelenggaraan Jaringan Telekomunikasi Bergerak",67,,"Komunikasi dan Informatika",0,0
+"61921
+61922
+61923
+61929","buka","Penyelenggaraan Jaringan Telekomunikasi yang Terintegrasi dengan Jasa Telekomunikasi",67,,"Komunikasi dan Informatika",0,0
+"61911","buka","Penyelenggaraan Jasa Telekomunikasi Layanan Content (ring tone, sms premium, dsb)",67,,"Komunikasi dan Informatika",0,0
+"61919","buka","Pusat Layanan Informasi (call center) dan Jasa Nilai Tambah Teleponi Lainnya",67,,"Komunikasi dan Informatika",0,0
+"61921","buka","Jasa Akses Internet (Internet service provider)",67,,"Komunikasi dan Informatika",0,0
+"61922","buka","Jasa Sistem Komunikasi Data",67,,"Komunikasi dan Informatika",0,0
+"61923","buka","Jasa Internet Teleponi Untuk Keperluan Publik",67,,"Komunikasi dan Informatika",0,0
+"61929","buka","Jasa Interkoneksi Internet (NAP), Jasa Multimedia Lainnya",67,,"Komunikasi dan Informatika",0,0
+"60101","buka","Lembaga Penyiaran Publik (LPP): Radio",-1,"Hanya monopoli untuk Lembaga Penyiaran Publik  Radio Republik Indonesia (RRI), Televisi Republik Indonesia (TVRI), dan Lembaga Penyiaran Publik Lokal (LPPL)","Komunikasi dan Informatika",0,0
+"60201","buka","Lembaga Penyiaran Publik (LPP): Televisi",-1,"Hanya monopoli untuk Lembaga Penyiaran Publik  Radio Republik Indonesia (RRI), Televisi Republik Indonesia (TVRI), dan Lembaga Penyiaran Publik Lokal (LPPL)","Komunikasi dan Informatika",0,0
+"42217","buka","Penyedia, Pengelola (Pengoperasian dan Penyewaan) dan Penyedia Jasa Konstruksi untuk Menara Telekomunikasi",0,"Modal dalam negeri 100%","Komunikasi dan Informatika",0,0
+"58130","buka","Penerbitan Surat Kabar, Majalah, dan Buletin (pers)",0,"Modal dalam negeri 100%","Komunikasi dan Informatika",0,0
+"60102","buka","Lembaga Penyiaran Swasta (LPS)   ",20,"Hanya untuk penambahan dan pengembangan usaha.
+Penanaman Modal Asing Maksimal 20%","Komunikasi dan Informatika",0,0
+"60202","buka","Lembaga Penyiaran Berlangganan (LPB)",20,"Hanya untuk penambahan dan pengembangan usaha.
+Penanaman Modal Asing Maksimal 20%","Komunikasi dan Informatika",0,0
+"53101
+53102
+53202","buka","Penyelenggaraan Pos",49,,"Komunikasi dan Informatika",0,0
+"00000 ","buka","Penyelenggara Transaksi Perdagangan Melalui Sistem Elektronik (market place berbasis platform, daily deals, price grabber, iklan baris online) dengan Nilai Investasi kurang dari Rp100.000.000.000,00",49,,"Komunikasi dan Informatika",0,0
+"64929
+64910","buka","Perusahaan Pembiayaan Investasi",85,,"Keuangan",0,0
+"64992","buka","Perusahaan Pembiayaan Modal Kerja",85,,"Keuangan",0,0
+"64922
+64923","buka","Perusahaan Pembiayaan Multiguna",85,,"Keuangan",0,0
+"64991","buka","Modal Ventura",85,,"Keuangan",0,0
+"64991","buka","Perusahaan Asuransi Kerugian",80,,"Keuangan",0,0
+"65111
+65112","buka","Perusahaan Asuransi Jiwa",80,,"Keuangan",0,0
+"65121
+65122","buka","Perusahaan Reasuransi ",80,,"Keuangan",0,0
+"66210","buka","Perusahaan Penilai Kerugian Asuransi ",80,,"Keuangan",0,0
+"66221","buka","Perusahaan Agen Asuransi",80,,"Keuangan",0,0
+"66222","buka","Perusahaan Pialang Asuransi",80,,"Keuangan",0,0
+"66225","buka","Perusahaan Pialang Reasuransi",80,,"Keuangan",0,0
+"66291","buka","Perusahaan Konsultan Aktuaria",80,,"Keuangan",0,0
+"64993","buka","Perusahaan Penjaminan",30,,"Keuangan",0,0
+"66197","buka","Pedagang Valuta Asing NonBank",0,"Modal dalam negeri 100%","Keuangan",0,0
+"64190","buka","Perusahaan Pialang Pasar Uang",-1,"Perizinan Khususdari Otoritas Jasa Keuangan","Keuangan",0,0
+"64125
+64126","buka","Bank Konvensional",-1,"Perizinan Khusus dari Otoritas Jasa Keuangan","Perbankan",0,0
+"64131","buka","Bank Syariah",-1,"Perizinan Khusus dari Otoritas Jasa Keuangan","Perbankan",0,0
+"64127 ","buka","Bank Perkreditan Rakyat Konvensional",0,"Modal dalam negeri 100%","Perbankan",0,0
+"64133","buka","Bank Perkreditan Rakyat Syariah",0,"Modal dalam negeri 100%","Perbankan",0,0
+"78101","buka","Jasa Penempatan Tenaga Kerja Indonesia di Dalam Negeri (seperti pendaftaran, perekrutan, pengurusan dokumen, penampungan orientasi pra pemberangkatan, pemberangkatan, penempatan dan pemulangan tenaga kerja)",49,,"Ketenagakerjaan",0,0
+"78200","buka","Penyediaan Jasa Pekerja/Buruh [proses pendaftaran, perekrutan, pengurusan dokumen (antara lain perjanjian kerja), negosiasi untuk mendapatkan pekerjaan dari perusahaan pemberi kerja, mempekerjakan pekerja/buruh, seperti pekerjaan jasa cleaning service, satpam, catering dan jasa penunjang lainnya]",49,,"Ketenagakerjaan",0,0
+"85499
+85492
+85493
+85494","buka","Pelatihan Kerja (memberi, memperoleh, meningkatkan, mengembangkan kompetensi kerja, produktivitas, disiplin, sikap dan etos kerja antara lain meliputi bidang kejuruan teknik dan engineering, tata niaga, bahasa, pariwisata, manajemen, teknologi informasi, seni dan pertanian yang diarahkan untuk membekali angkatan kerja memasuki dunia kerja) ",67,,"Ketenagakerjaan",0,0
+"78102","buka","Jasa Penempatan Tenaga Kerja Indonesia di Luar Negeri (proses perekrutan, pengurusan dokumen, pendidikan dan pelatihan, penampungan, persiapan pemberangkatan, pemberangkatan dan pemulangan Calon Tenaga Kerja Indonesia/CTKI)",0,"Modal dalam negeri 100%","Ketenagakerjaan",0,0
+"85132                 85133","buka","Pendidikan Anak Usia Dini",-1,"Sesuai Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Sisdiknas)  serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85121","buka","Jasa Pendidikan Sekolah Dasar Swasta",-1,"Sesuai Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Sisdiknas)  serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85122","buka","Sekolah Lanjutan Tingkat Pertama Swasta",-1,"Sesuai Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Sisdiknas)  serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85220","buka","Jasa Pendidikan Sekolah Menengah Umum Swasta",-1,"Sesuai Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Sisdiknas)  serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85240","buka","Jasa Pendidikan Sekolah Menengah Kejuruan Swasta",-1,"Sesuai Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Sisdiknas)  serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85321","buka","Jasa Pendidikan Tinggi Program Gelar Swasta ",-1,"Sesuai Undang-Undang Nomor 12 Tahun 2012 tentang Pendidikan Tinggi serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"85322","buka","Jasa Pendidikan Tinggi NonGelar Swasta",-1,"Sesuai Undang-Undang Nomor 12 Tahun 2012 tentang Pendidikan Tinggi serta Peraturan Pelaksanaannya","Pendidikan",0,0
+"21012","buka","Industri Farmasi Obat Jadi",85,,"Kesehatan",0,0
+"71205","buka","Institusi Pengujian Alat Kesehatan",67,,"Kesehatan",0,0
+"86901","buka","Fasilitas Pelayanan Akupuntur",49,,"Kesehatan",0,0
+"86903","buka","Pelayanan Pest Control/Fumigasi",67,,"Kesehatan",0,0
+"86904","buka","Pelayanan Evakuasi Medik dan Ambulantory",67,,"Kesehatan",0,0
+"21012","buka","Produsen Narkotika (Industri Farmasi)",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"46693","buka","Pedagang Besar Farmasi Narkotika",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"21022","buka","Pengolahan Obat Tradisional",0,"Modal dalam negeri 100%","Kesehatan",0,0
+"21022","buka","Industri/Usaha Obat Tradisional/Ekstrak Bahan Alam",0,"Modal dalam negeri 100%","Kesehatan",0,0
+"46693","buka","Perdagangan Besar Bahan Baku Farmasi",0,"Modal dalam negeri 100%","Kesehatan",0,0
+"47722
+47723
+47733","buka","Apotek, Toko Obat, Toko Alat Kesehatan, dan Optik",0,"Modal dalam negeri 100%","Kesehatan",0,0
+"86103
+86104
+86109","buka","Klinik Pratama: Rumah Bersalin Swasta, Clinic General Medical, Services/Klinik Pengobatan Umum, Jasa Kesehatan Pemukiman (Residential Health Services), dan Sarana Pelayanan Kesehatan Dasar",0,"Modal dalam negeri 100%
+
+","Kesehatan",0,0
+"86103","buka","Rumah Sakit",67,"Penanaman Modal Asing Maksimal 67%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN; dan
+Dapat dilakukan diseluruh Ibukota Provinsi Indonesia Timur, kecuali Makassar dan Manado","Kesehatan",0,0
+"86109
+86202
+86203
+86901
+","buka","Klinik Utama: Klinik Kedokteran Spesialis (Clinic Specialised Medical Services) (CPC 9312), Klinik Kedokteran Gigi Spesialis (CPC 9312), Jasa Keperawatan Spesialis (Nursing Services dengan CPC 93191), dan Jasa Rumah Sakit Lainnya (klinik rehabilitasi medik)",67,"Penanaman Modal Asing Maksimal 67%
+Maksimal 70% bagi penanam modal dari negara-negara ASEAN; dan
+Dapat dilakukan diseluruh Ibukota Provinsi Indonesia Timur kecuali Makassar dan Manado","Kesehatan",0,0
+"46693","buka","Penyalur Alat Kesehatan",49,"Penanaman Modal Asing Maksimal 49%
+Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"21012
+","buka","Industri Alat Kesehatan: Kelas A (Kapas, pembalut, kasa, tongkat, tiang infus, pembalut wanita, popok dewasa, tempat tidur pasien, kursi roda)",33,"Penanaman Modal Asing Maksimal 33%
+Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"21012
+","buka","Industri Alat Kesehatan: Kelas B (Masker bedah, jarum suntik, pasien monitor, kondom, surgical gloves, cairan hemodialisa, PACS, surgical knives)",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"21012
+","buka","Industri Alat Kesehatan: Kelas C (IV Catheter, X Ray, ECG, Patient Monitor, Inplan Orthopedy, Contact Lens, Oxymeter, Densitometer)",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"21012
+","buka","Kelas D (CT Scan, MRI, Catheter Jantung, Stent Jantung, HIV Test, Pacemaker, Dormal Filler, Ablation Catheter)",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0
+"86903","buka","Bank dan Laboratorium Jaringan dan Sel",-1,"Izin Khusus dari Kementerian Kesehatan","Kesehatan",0,0

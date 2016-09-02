@@ -20,7 +20,9 @@ public class Business extends RealmObject {
 
     private String kbli;
 
-    private String foreignStock;
+    // maximum foreigner's share
+    // if it is -1, that means there is no written share restriction on the presidential regulation
+    private int foreignStock;
 
     private String sector;
 
@@ -69,11 +71,11 @@ public class Business extends RealmObject {
         this.kbli = kbli;
     }
 
-    public String getForeignStock() {
+    public int getForeignStock() {
         return foreignStock;
     }
 
-    public void setForeignStock(String foreignStock) {
+    public void setForeignStock(int foreignStock) {
         this.foreignStock = foreignStock;
     }
 

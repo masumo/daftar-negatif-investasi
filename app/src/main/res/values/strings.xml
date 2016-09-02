@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Daftar Negatif Investasi</string>
-    <string name="search_hint">cari</string>
+    <string name="search_hint">Ketik bidang usaha atau KBLI...</string>
 
     <string-array name="array_sectorName">
         <item>--Semua--</item>
@@ -37,6 +37,8 @@
         <item>85</item>
         <item>90</item>
         <item>95</item>
+        <item>49% atau lebih</item>
+        <item>67% atau lebih</item>
     </string-array>
 
 </resources>

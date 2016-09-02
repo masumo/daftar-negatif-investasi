@@ -119,15 +119,18 @@ public class RealmController {
     }
 
     public RealmResults<Business> filterBusinesses(String status, String sector, String stock, int asean) {
+        // consult to res/value/string.xml for all possible values of sector and stock
 
         RealmQuery<Business> filterQuery = realm.where(Business.class);
         if(!status.toLowerCase().equals("all")) filterQuery.equalTo("status", status);
         if(!sector.toLowerCase().equals("--semua--")) filterQuery.contains("sector", sector, Case.INSENSITIVE);
-        if(!stock.toLowerCase().equals("--semua--")) filterQuery.contains("foreignStock", stock, Case.INSENSITIVE);
+        if(!stock.toLowerCase().equals("--semua--")&& stock.equals("49% atau lebih")) filterQuery.greaterThanOrEqualTo("foreignStock", 49);
+        else if(!stock.toLowerCase().equals("--semua--")&& stock.equals("67% atau lebih")) filterQuery.greaterThanOrEqualTo("foreignStock", 67);
+        else if(!stock.toLowerCase().equals("--semua--")) filterQuery.equalTo("foreignStock", Integer.parseInt(stock));
         if(asean==1) filterQuery.contains("otherReqs", "ASEAN", Case.INSENSITIVE);
         //else filterQuery.contains("otherReqs", "ASEAN", Case.INSENSITIVE);
         return filterQuery.findAllAsync();
-        // TODO refactor Stock => change to int
+        // TODO recheck NULL constraint and
 
     }
 }

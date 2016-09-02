@@ -127,9 +127,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        setupRecycler();
-
         //setRealmData();
+        setupRecycler();
 
         /*if (!Prefs.with(this).getPreLoad()) {
             setRealmData();
@@ -149,7 +148,13 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        realm.close();
+        if (realm != null) {
+            realm.close();
+            realm = null;
+        }
+        //realm.close();
+        //TODO refactor RealmController: remove static realm variable, introduce realm var in each activity or fragment. pass it to the model, if needed
+        // TODO test running app connected to USB (android studio). once running, change the orientation to landscape, see the error log
     }
 
     // onClick hamburger icon at the ActionBar
@@ -213,8 +218,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             book.setKbli(data[0]);
             book.setStatus(data[1]);
             book.setName(data[2]);
-            String prosen_saham = data[3];
-            book.setForeignStock(prosen_saham);
+            //String prosen_saham = data[3];
+            book.setForeignStock(Integer.parseInt(data[3]));
             book.setOtherReqs(data[4]);
             book.setSector(data[5]);
             int smb = Integer.parseInt(data[6]);
@@ -224,6 +229,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             businesses.add(book);
             i++;
         }
+
+        // delete existing data on the database
+        realm.beginTransaction();
+        realm.deleteAll();
+        realm.commitTransaction();
 
         for (Business b : businesses) {
             // Persist your data easily
@@ -246,6 +256,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         final MenuItem searchItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setOnQueryTextListener(this);
+        searchView.setQueryHint("Ketik bid. usaha atau KBLI...");
         MenuItemCompat.setOnActionExpandListener(searchItem,
                 new MenuItemCompat.OnActionExpandListener() {
                     @Override

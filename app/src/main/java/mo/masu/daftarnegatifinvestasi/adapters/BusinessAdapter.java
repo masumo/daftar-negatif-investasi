@@ -84,6 +84,7 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, Business
                 final TextView detailName = (TextView) content.findViewById(R.id.name);
                 final TextView detailSector = (TextView) content.findViewById(R.id.sector);
                 final TextView detailKBLI = (TextView) content.findViewById(R.id.kbli);
+                final TextView detailStatus = (TextView) content.findViewById(R.id.status);
                 final TextView detailReqs = (TextView) content.findViewById(R.id.req);
                 final TextView detailStock = (TextView) content.findViewById(R.id.foreign_stock);
 
@@ -91,7 +92,17 @@ public class BusinessAdapter extends RealmRecyclerViewAdapter<Business, Business
                 detailSector.setText(business.getSector());
                 detailKBLI.setText(business.getKbli());
                 detailReqs.setText(business.getOtherReqs());
-                detailStock.setText(business.getForeignStock()+"%");
+                String tmpStatus = "";
+                if(business.getStatus().equals("buka")) tmpStatus ="Bidang Usaha Terbuka dengan Persyaratan tertentu";
+                else if(business.getStatus().equals("tutup")) tmpStatus ="Bidang Usaha Tertutup untuk Penanaman Modal";
+                else if(business.getStatus().equals("ukm")) tmpStatus ="Bidang Usaha Terbuka dengan Persyaratan: yang dicadangkan \n" +
+                        "atau kemitraan dengan Usaha Mikro, Kecil, Dan Menengah Serta Koperasi\n";
+
+                detailStatus.setText(tmpStatus);
+                String tmpStock = "";
+                if(business.getForeignStock()==-1) tmpStock = "-"; // no explicit foreign share restriction
+                else tmpStock = business.getForeignStock()+"%";
+                detailStock.setText(tmpStock);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setView(content)

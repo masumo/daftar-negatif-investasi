@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Saham"
+        android:text="Maksimum Prosentase Saham Asing"
         android:id="@+id/textOptStock" />
 
     <Spinner
@@ -42,7 +42,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Syarat Khusus untuk Investasi dari ASEAN"
+        android:text="Syarat Khusus untuk Investor dari ASEAN"
         android:id="@+id/checkBoxASEAN" />
 
 
